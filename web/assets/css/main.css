@@ -1,10 +1,6 @@
-/* line 7, ../compass/sass/main.scss */
-#foo {
-  font-family: "Helvetica, Arial, Times"; }
-/* line 11, ../compass/sass/main.scss */
-#foo #bar {
-  color: #e2404b;
-  color: #ba4048;
-  color: #40ba5f;
-  color: #3fa95a;
-  color: #00aaff; }
+p {
+  color: #00aaff;
+}
+.pool {
+  font-family: "Helvetica, Arial, Times";
+}
