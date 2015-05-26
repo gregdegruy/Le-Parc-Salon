@@ -1,0 +1,188 @@
+/*
+
+author: Gregory Degruy;
+credit fonts to: http://www.google.com/fonts# 
+
+*/
+
+/*		HOME		*/
+.fillscreen {
+ 	margin-left: -5%;
+ 	margin-right: -8px;
+}
+
+.wrapper {
+	margin-bottom: 0px;
+}
+
+hr {
+	color: #C6ECC6;
+	background-color: #C6ECC6;
+	border: 0;
+	height: 1px;
+}
+
+#slideshow {
+	position: relative;
+	height: 350px;
+}
+#slideshow IMG{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 8;
+}#slideshow IMG.active{
+	z-index: 10;
+} #slideshow IMG.last-active{
+	z-index: 9;
+}
+
+hr.seperator {
+	background-color: #fff;
+	border: 0;
+	height: 1px;
+	margin: 75px 0px;
+	background-image:-webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,75), rgba(0,0,0,0));
+	background-image:-moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,75), rgba(0,0,0,0));
+	background-image:-ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,75), rgba(0,0,0,0));
+	background-image:-o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,75), rgba(0,0,0,0));
+	clear:both;
+}
+
+h1 {
+	font: 400 160px/.001 'Tangerine', Helvetica, sans-serif;
+ 	color: #000;
+ 	text-align: center;
+ 	color: green;
+} 
+
+ul {
+	list-style-type: none;
+	display: inline block;
+	font-family: calibri;
+	text-align: center;
+}
+
+li {
+	font-size: 1.1em;
+	display: inline;
+	padding: 0px 40px 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #68A866;
+}
+
+.slogan {
+	font: 400 60px/1.5 'Tangerine', Helvetica, sans-serif;
+	margin-left: 200px;
+	margin-right: 200px;
+	text-align:center;
+	background-color: #8FE88D;
+	padding: 40px;
+	margin: 50px -8px 0px; 
+}
+
+.section1 {
+	float: left;
+	width: 25%;
+	border: 1px solid #68A866;
+	background-color:#68A866;
+	border-radius: 50px;
+	margin-left:10%;
+	margin-bottom: 90px;
+	height: 350px;
+	box-shadow: 0px 5px 10px #888888;	
+}
+
+.section2 {
+	float: left;
+	width: 25%;
+	margin: 0px 50px 0px;
+	border: 1px solid #406840;
+	background-color:#406840;
+	border-radius: 50px;
+	height: 350px;
+	box-shadow: 0px 5px 10px #888888;	
+}
+
+.section3 {
+	float: left;
+	width: 25%;
+	border: 1px solid #97F595;
+	background-color:#97F595;
+	border-radius: 50px;
+	height: 350px;
+	box-shadow: 0px 5px 10px #888888;
+}
+
+.sectiona {
+	height: 500px;
+	margin-left: -5%;
+ 	margin-right: -8px;
+	clear: both;
+	align: center;
+	background-color:#ADF5BB;
+	text-size: 20pt;
+	padding-left: 100px;
+	padding-top: 50px;
+}
+
+.sectionb {
+	height: 500px;
+	margin-left: -5%;
+ 	margin-right: -8px;
+	clear: both;
+	align: center;
+	background-color:#cfefbB;
+	padding-left: 100px;
+	padding-top: 50px;
+}
+
+table{
+	text-align: left;
+	font-family: Calibri;
+	border-spacing: 50px 0px;
+	padding: 20px;
+	margin-left: 10px;
+}
+
+th {
+	font-size: 14pt;
+	padding-right: 30px;
+	border-bottom: 2px solid #df2222;
+	align: left;
+}
+
+td {
+	padding: 2px;
+}
+
+.footerhead {
+	background-color: #E84442;
+	height: 30px;
+	margin: 0px -8px 0px;
+}
+.footer {
+	background-color: #F54846;
+	height: 300px;
+	margin: 0px -8px 0px;
+	color: #fff;
+}
+.gregin {
+	text-decoration: overline;
+	color: rgb(20, 100, 200);
+}
+
+.dacreator {
+	font-family: Courier;
+	font-size: 11px;
+	background-color: rgb(240, 240, 240);
+	height: 20px;
+	margin: 0px -8px 0px;
+	padding: 3px;
+	color: #232e55;
+	text-align: center;
+}
+
