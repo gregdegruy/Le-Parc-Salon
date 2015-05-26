@@ -1,7 +1,11 @@
 {
   "name": "Le-Parc-Salon",
   "version": "1.0.0",
-  "description": "Le Parc Salon ============ ####Visit Le Parc Salon http://xula.edu/planningir/index.php",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregdegruy/Le-Parc-Salon.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +13,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "jit-grunt": "^0.9.1",
+    "less": "^2.5.1"
   }
 }
