@@ -1,8 +1,9 @@
-/**
+/*******
  * Reset
  */
 body {
   color: #000000;
+  background-color: #F2F2F2;
 }
 .nav.navbar-nav li a {
   color: #000000;
@@ -19,11 +20,22 @@ body {
 .nav.navbar-nav li a:active {
   color: #000000;
 }
-/**
+/********
+ * Header
+ */
+header {
+  margin-top: 100px;
+}
+header h1 {
+  font-family: 'Parisienne', cursive;
+}
+/********
  * Navbar
  */
 .nav.navbar-nav li a {
   margin: 0 10px;
+  font-family: 'Parisienne', cursive;
+  font-size: 16pt;
 }
 .nav.navbar-nav li a:hover {
   color: #000000;
@@ -43,9 +55,36 @@ body {
 .navbar .navbar-collapse {
   text-align: center;
 }
-/**
- * Header
+/******************
+ * Salon Components
  */
-header {
-  margin-top: 100px;
+.salon,
+.services,
+.stylists {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 2px 1px #EEEEEE;
+  -moz-box-shadow: 0 2px 1px #EEEEEE;
+  -o-box-shadow: 0 2px 1px #EEEEEE;
+  -box-shadow: 0 2px 1px #EEEEEE;
+}
+.salon h2,
+.services h2,
+.stylists h2 {
+  font-family: 'Parisienne', cursive;
+  font-size: 36pt;
+  font-weight: 590;
+}
+.salon {
+  margin: 20px;
+}
+.salon .statment-or-purpose {
+  font-family: 'Parisienne', cursive;
+  font-size: 24pt;
+  font-weight: lighter;
+}
+.services {
+  margin: 20px;
+}
+.stylists {
+  margin: 20px;
 }

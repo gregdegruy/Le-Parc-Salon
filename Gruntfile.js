@@ -14,7 +14,8 @@ module.exports = function(grunt) {
                  files: {
                     "web/assets/css/main.css": "web/assets/css/less/main.less" // dest: src
                 }
-             }
+             },
+             production : {}
          },
          watch: {
           styles: {
