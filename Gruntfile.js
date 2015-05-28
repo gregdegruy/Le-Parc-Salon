@@ -8,7 +8,7 @@ module.exports = function(grunt) {
                  options: {
                      paths: ["web/assets/css"],
                      compress: false,
-                    yuicompress: true,
+                    yuicompress: false,
                     optimization: 2
                  },
                  files: {

@@ -8,29 +8,40 @@ body {
 body a {
   color: #000000;
 }
-a {
+body a:link {
+  color: #000000;
+}
+body a:visited {
+  color: #000000;
+}
+body a:hover {
+  color: #000000;
+}
+body a:active {
   color: #000000;
 }
 /**
- * Colors
+ * Header
  */
-/**
- * Fonts
- */
-.pool {
-  font-family: "Helvetica, Arial, Times";
-}
 /**
  * Navbar
  */
+.navbar-default {
+  color: #000000;
+}
 .navbar {
   background-color: #3fa95a;
   border-bottom: solid 2px #40ba5f;
   border-radius: 0;
   margin: -1px;
+  text-align: center;
+}
+.navbar ul {
+  color: #000000;
 }
 .navbar li {
-  margin: 0 50px;
+  margin: 0 10px;
+  color: #000000;
 }
 .navbar .navbar-nav {
   display: inline-block;
@@ -39,4 +50,7 @@ a {
 }
 .navbar .navbar-collapse {
   text-align: center;
+}
+header {
+  margin-top: 100px;
 }
