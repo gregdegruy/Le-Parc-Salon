@@ -30,13 +30,20 @@ body {
  * Header
  */
 header {
-  margin-top: 100px;
+  background-color: #FFFFFF;
+  padding: 50px 0;
+  margin-top: 40px;
 }
 header h1 {
   font-family: 'Parisienne', cursive;
-  font-size: 46pt;
+  font-size: 66pt;
   font-weight: bold;
   text-align: center;
+}
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /********
  * Navbar
