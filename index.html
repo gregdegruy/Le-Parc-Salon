@@ -2,15 +2,15 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="desciption" content="Greg Degruy">
+		<meta name="desciption" content="">
 		<meta name="keywords" content="hair salon, new orleans">
 		<meta name="author" content="Greg Degruy">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>Le Parc Salon</title>
 
-		<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href="vendor/assets/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="web/assets/css/main.css">
 		<!-- allow older IE to run HTML5 -->
 		<!--[if IE]>
 	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,14 +18,18 @@
 	</head>
 	<body>
 		<div id="main-container">
-			<nav>
-				<ul id="menu" class="nav nav-pills">
-					<li><a href="#">Salon</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Stylists</a></li>
-				</ul>
-				<button>=</button>
-			</nav>
+            <!-- nav -->
+		    <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Salon</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Stylists</a></li>
+              </ul>                            
+            </div>
+          </div>
+        </nav><!-- end nav -->
 			<header>
 				<h1>Le Parc Salon</h1>
 			</header>
@@ -49,41 +53,10 @@
 					</p>
 				</div>
 			</div>
-			<footer>
-				<table id="site-map">
-					<thead>
-						<th>
-							<td>Site Map</td>
-						</th>
-					</thead>
-					<tbody>
-						<tr>
-							<td><a href="#">Salon</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">Services</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">Stylists</a></td>
-						</tr>
-					</tbody>
-				</table>
-				<table id="social">
-					<thead>
-						<th>
-							<td>Connect With Us</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Facebook</td>
-						</tr>
-						<tr>
-							<td>LinkedIn</td>
-						</tr>
-					</tbody>
-				</table>
+			<footer>				
 			</footer>
 		</div>
+		<script type="text/javascript" src="lib/assets/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="vendor/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 	</body>
 </html>
