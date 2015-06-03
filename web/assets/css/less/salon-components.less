@@ -24,7 +24,7 @@
     }
     
     margin: @salon-components-margin-top-bottom @salon-components-margin-left-right;
-    padding: 3em;
+    padding: 3em 1em;
 }
 
 .salon {
@@ -47,13 +47,37 @@
         margin: 2em 0;
         padding: 0.4em 0.8em;
     }
+    
     .hours-of-operation {
         font-weight: 300;
         font-size: 2em;
         list-style-type: none;
         text-align: left;
-        span {
-            text-align: right !important;
+    }
+    
+    .address-container {
+        background-color: #FEFEFE;
+        border: 1px solid #EEEEEE;
+        border-radius: 50%;
+        display: block;
+        font-size: 2.8em;
+        font-weight: 200;
+        height: 7.5em;
+        padding: 0.2em;
+        padding-top: 0.6em;
+        width: 7.5em;
+        
+        margin-left: auto;
+        margin-right: auto 
+    }
+    
+    .map {
+        height: 700px;
+        overflow: hidden;
+        width: inherit;
+        img {
+            margin-left: -1300px;
+            margin-top: -200px
         }
     }
 }

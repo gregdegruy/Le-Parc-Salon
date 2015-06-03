@@ -87,7 +87,7 @@ header img {
   -o-box-shadow: 0 2px 1px #EEEEEE;
   box-shadow: 0 2px 1px #EEEEEE;
   margin: 100px 20px;
-  padding: 3em;
+  padding: 3em 1em;
 }
 .salon h2,
 .services h2,
@@ -124,6 +124,26 @@ header img {
   list-style-type: none;
   text-align: left;
 }
-.salon .hours-of-operation span {
-  text-align: right !important;
+.salon .address-container {
+  background-color: #FEFEFE;
+  border: 1px solid #EEEEEE;
+  border-radius: 50%;
+  display: block;
+  font-size: 2.8em;
+  font-weight: 200;
+  height: 7.5em;
+  padding: 0.2em;
+  padding-top: 0.6em;
+  width: 7.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.salon .map {
+  height: 700px;
+  overflow: hidden;
+  width: inherit;
+}
+.salon .map img {
+  margin-left: -1300px;
+  margin-top: -200px;
 }
