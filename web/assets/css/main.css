@@ -87,7 +87,7 @@ header img {
   -o-box-shadow: 0 2px 1px #EEEEEE;
   box-shadow: 0 2px 1px #EEEEEE;
   margin: 100px 20px;
-  padding: 5em;
+  padding: 3em;
 }
 .salon h2,
 .services h2,
@@ -104,7 +104,7 @@ header img {
 }
 .salon .le-parc-salon-mission {
   font-family: 'Parisienne', cursive;
-  font-size: 3.2em;
+  font-size: 2em;
   font-weight: lighter;
   margin: 2em 0;
 }
@@ -114,6 +114,16 @@ header img {
   border-radius: 10px;
   color: #FFFFFF;
   font-size: 3em;
+  font-weight: 100;
   margin: 2em 0;
   padding: 0.4em 0.8em;
+}
+.salon .hours-of-operation {
+  font-weight: 300;
+  font-size: 2em;
+  list-style-type: none;
+  text-align: left;
+}
+.salon .hours-of-operation span {
+  text-align: right !important;
 }

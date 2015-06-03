@@ -13,6 +13,7 @@
     -moz-box-shadow: 0 2px 1px #EEEEEE;
     -o-box-shadow: 0 2px 1px #EEEEEE;
     box-shadow: 0 2px 1px #EEEEEE;
+    
     h2 {
         font-family: @brand-font;
         font-size: 6em;
@@ -21,12 +22,14 @@
         position: relative;
         text-align: center;
     }
+    
     margin: @salon-components-margin-top-bottom @salon-components-margin-left-right;
-    padding: 5em;
+    padding: 3em;
 }
 
 .salon {
     text-align: center;
+    
     .le-parc-salon-mission {
         font-family: @brand-font;
         font-size: @le-parc-salon-mission-font-size;
@@ -40,8 +43,18 @@
         border-radius: 10px;
         color: #FFFFFF;
         font-size: 3em;
+        font-weight: 100;
         margin: 2em 0;
         padding: 0.4em 0.8em;
+    }
+    .hours-of-operation {
+        font-weight: 300;
+        font-size: 2em;
+        list-style-type: none;
+        text-align: left;
+        span {
+            text-align: right !important;
+        }
     }
 }
 
