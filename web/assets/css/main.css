@@ -74,6 +74,10 @@ header img {
 /******************
  * Salon Components
  */
+.call-to-action-sm {
+  font-size: 3em;
+  font-weight: 200;
+}
 .salon,
 .services,
 .stylists {
@@ -82,22 +86,34 @@ header img {
   -moz-box-shadow: 0 2px 1px #EEEEEE;
   -o-box-shadow: 0 2px 1px #EEEEEE;
   box-shadow: 0 2px 1px #EEEEEE;
-  padding: 50px;
   margin: 100px 20px;
+  padding: 5em;
 }
 .salon h2,
 .services h2,
 .stylists h2 {
   font-family: 'Parisienne', cursive;
-  font-size: 36pt;
-  font-weight: 590;
-  text-align: center;
-  position: relative;
+  font-size: 6em;
+  font-weight: 500;
   margin-top: -30px;
+  position: relative;
+  text-align: center;
+}
+.salon {
+  text-align: center;
 }
 .salon .le-parc-salon-mission {
   font-family: 'Parisienne', cursive;
-  font-size: 26pt;
+  font-size: 3.2em;
   font-weight: lighter;
-  text-align: center;
+  margin: 2em 0;
+}
+.salon .salon-phone-button {
+  background-color: #00aaff;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 3em;
+  margin: 2em 0;
+  padding: 0.4em 0.8em;
 }

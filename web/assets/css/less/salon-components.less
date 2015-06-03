@@ -1,6 +1,12 @@
 /******************
  * Salon Components
  */
+
+.call-to-action-sm {
+    font-size: 3em;
+    font-weight: 200;    
+}
+
 .salon, .services, .stylists {
     background-color: #FFFFFF;
     -webkit-box-shadow: 0 2px 1px #EEEEEE;
@@ -9,24 +15,34 @@
     box-shadow: 0 2px 1px #EEEEEE;
     h2 {
         font-family: @brand-font;
-        font-size: @salon-components-h2-font-size;
-        font-weight: @salon-components-h2-font-weight;
-        text-align: center;
+        font-size: 6em;
+        font-weight: 500;        
+        margin-top: -30px;
         position: relative;
-        margin-top: @salon-components-h2-margin-top;
+        text-align: center;
     }
-    padding: 50px;
     margin: @salon-components-margin-top-bottom @salon-components-margin-left-right;
+    padding: 5em;
 }
 
 .salon {
-    
+    text-align: center;
     .le-parc-salon-mission {
         font-family: @brand-font;
         font-size: @le-parc-salon-mission-font-size;
         font-weight: lighter;
-        text-align: center;
+        margin: 2em 0;
     }    
+    
+    .salon-phone-button {
+        background-color: @brand-blue;
+        border: none;
+        border-radius: 10px;
+        color: #FFFFFF;
+        font-size: 3em;
+        margin: 2em 0;
+        padding: 0.4em 0.8em;
+    }
 }
 
 .services {
@@ -36,4 +52,3 @@
 .stylists {
      
 }
-
