@@ -7,6 +7,16 @@
     font-weight: 200;    
 }
 
+h2 {
+    font-family: @brand-font;
+    font-size: 6em;
+    font-weight: 500; 
+    margin-bottom: -1.6em;
+    margin-top: 1em;
+    position: relative;
+    text-align: center;
+}
+
 .salon, .services, .stylists {
     background-color: #FFFFFF;
     -webkit-box-shadow: 0 2px 1px #EEEEEE;
@@ -44,31 +54,40 @@
         color: #FFFFFF;
         font-size: 3em;
         font-weight: 100;
-        margin: 2em 0;
-        padding: 0.4em 0.8em;
+        margin: 1em 0;
+        padding: 0em 0.01em;
     }
     
     .hours-of-operation {
+        display: block;
         font-weight: 300;
         font-size: 2em;
         list-style-type: none;
         text-align: left;
+        margin: 2em 0;
+        margin-left: auto;
+        margin-right: auto;
+        div.row div:nth-child(2) {
+            margin-left: 2em;
+        }
     }
     
     .address-container {
         background-color: #FEFEFE;
         border: 1px solid #EEEEEE;
         border-radius: 50%;
-        display: block;
+        display: flex;
         font-size: 2.8em;
         font-weight: 200;
         height: 7.5em;
         padding: 0.2em;
         padding-top: 0.6em;
-        width: 7.5em;
-        
+        position: relative;
+        width: 7.5em;        
         margin-left: auto;
-        margin-right: auto 
+        margin-right: auto;
+        margin-bottom: -40px;
+        z-index: 10;
     }
     
     .map {
@@ -83,7 +102,13 @@
 }
 
 .services {
-     
+     h6 {
+         font-size: 1.2em;
+         font-weight: 450;
+     }
+    table {
+        font-weight: 200;
+    }
 }
 
 .stylists {
