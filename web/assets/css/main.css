@@ -48,28 +48,32 @@ header img {
 /********
  * Navbar
  */
-.nav.navbar-nav li a {
-  margin: 0 10px;
-  font-family: 'Tangerine', cursive;
-  font-size: 16pt;
-}
-.nav.navbar-nav li a:hover {
-  color: #000000;
-}
-.navbar {
+nav {
   background-color: #3fa95a;
   border-bottom: solid 2px #40ba5f;
   border-radius: 0;
-  margin: -1px;
+  font-family: 'Tangerine', cursive;
+  font-size: 1.8em;
   text-align: center;
 }
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
+nav ul {
+  list-style-type: none;
+  margin: 0;
 }
-.navbar .navbar-collapse {
-  text-align: center;
+nav ul li {
+  display: inline;
+  margin: 0em 0.4em;
+  padding: 0.2em 1em;
+}
+nav ul li a {
+  color: #000000;
+}
+nav ul li a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background-color: #40ba5f;
 }
 /******************
  * Salon Components
@@ -122,10 +126,10 @@ h2 {
   border: none;
   border-radius: 10px;
   color: #FFFFFF;
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: 100;
   margin: 1em 0;
-  padding: 0em 0.01em;
+  padding: 0.4em 0.4em;
 }
 .salon .hours-of-operation {
   display: block;
@@ -172,4 +176,11 @@ h2 {
 }
 .services table {
   font-weight: 200;
+}
+.stylists .staff-picture {
+  border-radius: 50%;
+  height: 150px;
+  margin-top: 4em;
+  overflow: hidden;
+  width: 150px;
 }
