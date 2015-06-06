@@ -1,6 +1,10 @@
 /*******
  * Reset
  */
+html,
+body {
+  height: 100%;
+}
 body {
   color: #000000;
   background-color: #F2F2F2;
@@ -26,6 +30,23 @@ body {
 /******************
  * Salon Components
  */
+/********
+ * Footer
+ */
+/******************
+ * Footer
+ */
+.sections-container {
+  margin-bottom: 650px;
+}
+footer {
+  background-color: #e2404b;
+  border-top: 0.5em solid #ba4048;
+  color: #FFFFFF;
+  height: 500px;
+  font-weight: 100;
+  margin-top: -500px;
+}
 /********
  * Header
  */

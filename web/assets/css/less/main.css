@@ -31,43 +31,67 @@ body {
  * Header
  */
 header {
-  margin-top: 100px;
+  background-color: #FFFFFF;
+  padding: 50px 0;
+  margin-top: 40px;
 }
 header h1 {
-  font-family: 'Parisienne', cursive;
-  font-size: 46pt;
+  font-family: 'Tangerine', cursive;
+  font-size: 66pt;
   font-weight: bold;
   text-align: center;
+}
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /********
  * Navbar
  */
-.nav.navbar-nav li a {
-  margin: 0 10px;
-  font-family: 'Parisienne', cursive;
-  font-size: 16pt;
-}
-.nav.navbar-nav li a:hover {
-  color: #000000;
-}
-.navbar {
+nav {
   background-color: #3fa95a;
   border-bottom: solid 2px #40ba5f;
   border-radius: 0;
-  margin: -1px;
+  font-family: 'Tangerine', cursive;
+  font-size: 1.8em;
   text-align: center;
 }
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
+nav ul {
+  list-style-type: none;
+  margin: 0;
 }
-.navbar .navbar-collapse {
-  text-align: center;
+nav ul li {
+  display: inline;
+  margin: 0em 0.4em;
+  padding: 0.2em 1em;
+}
+nav ul li a {
+  color: #000000;
+}
+nav ul li a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+nav ul li:hover {
+  background-color: #40ba5f;
 }
 /******************
  * Salon Components
  */
+.call-to-action-sm {
+  font-size: 3em;
+  font-weight: 200;
+}
+h2 {
+  font-family: 'Tangerine', cursive;
+  font-size: 6em;
+  font-weight: 500;
+  margin-bottom: -1.6em;
+  margin-top: 1em;
+  position: relative;
+  text-align: center;
+}
 .salon,
 .services,
 .stylists {
@@ -76,22 +100,88 @@ header h1 {
   -moz-box-shadow: 0 2px 1px #EEEEEE;
   -o-box-shadow: 0 2px 1px #EEEEEE;
   box-shadow: 0 2px 1px #EEEEEE;
-  padding: 50px;
   margin: 100px 20px;
+  padding: 3em 1em;
 }
 .salon h2,
 .services h2,
 .stylists h2 {
-  font-family: 'Parisienne', cursive;
-  font-size: 36pt;
-  font-weight: 590;
-  text-align: center;
-  position: relative;
+  font-family: 'Tangerine', cursive;
+  font-size: 6em;
+  font-weight: 500;
   margin-top: -30px;
+  position: relative;
+  text-align: center;
+}
+.salon {
+  text-align: center;
 }
 .salon .le-parc-salon-mission {
-  font-family: 'Parisienne', cursive;
-  font-size: 26pt;
+  font-family: 'Tangerine', cursive;
+  font-size: 2.4em;
   font-weight: lighter;
-  text-align: center;
+  margin: 2em 0;
+}
+.salon .salon-phone-button {
+  background-color: #00aaff;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 2.8em;
+  font-weight: 100;
+  margin: 1em 0;
+  padding: 0.4em 0.4em;
+}
+.salon .hours-of-operation {
+  display: block;
+  font-weight: 300;
+  font-size: 2em;
+  list-style-type: none;
+  text-align: left;
+  margin: 2em 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.salon .hours-of-operation div.row div:nth-child(2) {
+  margin-left: 2em;
+}
+.salon .address-container {
+  background-color: #FEFEFE;
+  border: 1px solid #EEEEEE;
+  border-radius: 50%;
+  display: flex;
+  font-size: 2.8em;
+  font-weight: 200;
+  height: 7.5em;
+  padding: 0.2em;
+  padding-top: 0.6em;
+  position: relative;
+  width: 7.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -40px;
+  z-index: 10;
+}
+.salon .map {
+  height: 700px;
+  overflow: hidden;
+  width: inherit;
+}
+.salon .map img {
+  margin-left: -1300px;
+  margin-top: -200px;
+}
+.services h6 {
+  font-size: 1.2em;
+  font-weight: 450;
+}
+.services table {
+  font-weight: 200;
+}
+.stylists .staff-picture {
+  border-radius: 50%;
+  height: 150px;
+  margin-top: 4em;
+  overflow: hidden;
+  width: 150px;
 }
