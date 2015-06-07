@@ -8,13 +8,15 @@ nav {
     font-family: @brand-font;
     font-size: 1.8em;    
     text-align: center;
+    z-index: 10;
     ul {
         list-style-type: none;
         margin: 0;
+        width: auto;
             li {
                 display: inline;
                 margin: 0em 0.2em;
-                padding: 0.2em 1em;
+                padding: 0.2em 0.3em;
                 a {
                     color: #000000;
                     &:hover {
@@ -31,3 +33,22 @@ nav {
             }
     }
 } 
+
+.headroom--pinned {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+      left: 0;
+    top: 0;
+    transform: translateY(0%);
+    transition-duration: 1s;
+}
+.headroom--unpinned {
+    display: none;
+    transform: translateY(-100%);
+}
+
+.headroom {
+    transition: transform 200ms linear;
+}
