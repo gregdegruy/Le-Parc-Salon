@@ -127,22 +127,18 @@ nav ul li:hover {
 nav ul li:last-child {
   margin-right: 2em;
 }
-.headroom--pinned {
-  display: block;
+.headroom {
   position: fixed;
-  z-index: 10;
-  right: 0;
-  left: 0;
   top: 0;
-  transform: translateY(0%);
-  transition-duration: 1s;
+  left: 0;
+  right: 0;
+  transition: all 0.2s ease-in-out;
 }
 .headroom--unpinned {
-  display: none;
-  transform: translateY(-100%);
+  top: -100px;
 }
-.headroom {
-  transition: transform 200ms linear;
+.headroom--pinned {
+  top: 0;
 }
 /******************
  * Salon Components
