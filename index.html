@@ -232,14 +232,25 @@
                 <hr>
                 <button>Like on Facebook</button>
                 <button>Endorse on LinkedIn</button>
-                <p class="copyright">Copyright 2015 Le Parc Salon. All rights reserved.</p>	    
-			</footer><!-- end footer -->
+                <p class="copyright">Copyright 2015 Le Parc Salon. All rights reserved.</p>               </footer><!-- end footer -->
+		</div>
+		
+		<div class="to-top-button">
+		    <button id="to-top-button"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
 		</div>
 		
         <!-- javascript -->
 		<script type="text/javascript" src="lib/assets/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="vendor/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="web/assets/js/development/main.js"></script>
+		<script type="text/javascript">
+            $(document).ready(function () {
+                var toTopButton = document.getElementById("to-top-button");
+                $(toTopButton).click(function () {
+                    window.scrollTo(0,0);
+                });
+            });
+        </script>
 		<!-- end javascript -->
 	</body>
 </html>

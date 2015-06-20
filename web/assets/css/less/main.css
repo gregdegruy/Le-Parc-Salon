@@ -2,9 +2,16 @@
 /*******
  * Reset
  */
+html,
+body {
+  height: 100%;
+}
 body {
   color: #000000;
   background-color: #F2F2F2;
+}
+button {
+  border: none;
 }
 .nav.navbar-nav li a {
   color: #000000;
@@ -27,6 +34,46 @@ body {
 /******************
  * Salon Components
  */
+/********
+ * Footer
+ */
+/******************
+ * Footer
+ */
+.sections-container {
+  margin-bottom: 650px;
+}
+footer {
+  background-color: #e2404b;
+  border-top: 0.5em solid #ba4048;
+  color: #CCCCCC;
+  height: 500px;
+  font-weight: 100;
+  margin-top: -500px;
+  text-align: center;
+}
+footer button {
+  background-color: #ba4048;
+  font-size: 1.6em;
+  width: 300px;
+  margin: 1em 0;
+  padding: 0.6em 1.6em;
+}
+footer .copyright {
+  font-size: 0.6em;
+  background-color: #ba4048;
+  padding: 0.6em;
+  margin: 0;
+  margin-top: 195px;
+}
+footer hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(200, 200, 200, 0), rgba(200, 200, 200, 0.75), rgba(200, 200, 200, 0));
+}
+footer p {
+  margin-top: 1em;
+}
 /********
  * Header
  */
@@ -56,15 +103,17 @@ nav {
   font-family: 'Tangerine', cursive;
   font-size: 1.8em;
   text-align: center;
+  z-index: 10;
 }
 nav ul {
   list-style-type: none;
   margin: 0;
+  width: auto;
 }
 nav ul li {
   display: inline;
-  margin: 0em 0.4em;
-  padding: 0.2em 1em;
+  margin: 0em 0.2em;
+  padding: 0.2em 0.3em;
 }
 nav ul li a {
   color: #000000;
@@ -75,6 +124,22 @@ nav ul li a:hover {
 }
 nav ul li:hover {
   background-color: #40ba5f;
+}
+nav ul li:last-child {
+  margin-right: 2em;
+}
+.headroom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.2s ease-in-out;
+}
+.headroom--unpinned {
+  top: -100px;
+}
+.headroom--pinned {
+  top: 0;
 }
 /******************
  * Salon Components
@@ -124,7 +189,6 @@ h2 {
 }
 .salon .salon-phone-button {
   background-color: #00aaff;
-  border: none;
   border-radius: 10px;
   color: #FFFFFF;
   font-size: 2.8em;
@@ -166,6 +230,7 @@ h2 {
   height: 700px;
   overflow: hidden;
   width: inherit;
+  z-index: 1;
 }
 .salon .map img {
   margin-left: -1300px;
@@ -184,4 +249,10 @@ h2 {
   margin-top: 4em;
   overflow: hidden;
   width: 150px;
+}
+.to-top-button {
+  bottom: 0;
+  position: fixed;
+  right: 0;
+  z-index: 2;
 }

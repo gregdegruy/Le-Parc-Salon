@@ -249,3 +249,25 @@ h2 {
   overflow: hidden;
   width: 150px;
 }
+/********
+ * To Top Button
+ */
+.to-top-button button {
+  background-color: transparent;
+  border-radius: 5%;
+  bottom: 0;
+  background-color: #40ba5f;
+  border: 1px solid #3fa95a;
+  height: 70px;
+  margin: 1.6em;
+  opacity: 0.8;
+  padding: 1.4em;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  width: 70px;
+  z-index: 9;
+}
+.to-top-button button:focus {
+  border: none;
+}
