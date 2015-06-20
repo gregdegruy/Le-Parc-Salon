@@ -28,6 +28,9 @@ button {
   color: #000000;
 }
 /********
+ * Carousel
+ */
+/********
  * Header
  */
 /******************
@@ -36,6 +39,20 @@ button {
 /********
  * Footer
  */
+/****************
+ * Salon Carousel
+ */
+.salon-carousel .carousel-control.left,
+.salon-carousel .carousel-control.right {
+  background-image: none;
+}
+.salon-carousel .crop-slide-image {
+  height: 350px;
+  overflow: hidden;
+}
+.salon-carousel .crop-slide-image img {
+  height: 550px;
+}
 /******************
  * Footer
  */

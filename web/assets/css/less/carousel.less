@@ -1,0 +1,17 @@
+/****************
+ * Salon Carousel
+ */
+.salon-carousel {
+    .carousel-control {
+        &.left, &.right {
+            background-image: none;
+        }
+    }
+    .crop-slide-image {
+        height: @salon-carousel-sm;
+        overflow: hidden;
+        img {        
+            height: @salon-carousel-sm + 200px;
+        }        
+    }
+}
