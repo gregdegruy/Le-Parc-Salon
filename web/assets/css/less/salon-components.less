@@ -75,29 +75,34 @@ h2 {
         background-color: #FEFEFE;
         border: 1px solid #EEEEEE;
         border-radius: 50%;
-        display: flex;
+        -webkit-box-shadow: 0px 4px 6px 1px rgba(150,150,150,0.70);
+        -moz-box-shadow: 0px 4px 6px 1px rgba(150,150,150,0.70);
+        box-shadow: 0px 4px 6px 1px rgba(150,150,150,0.70);
+        cursor: pointer;
         font-size: 2.8em;
         font-weight: 200;
         height: 7.5em;
         padding: 0.2em;
         padding-top: 0.6em;
         position: relative;
+        transition: all .2s ease-in-out;
         width: 7.5em;        
         margin-left: auto;
         margin-right: auto;
         margin-bottom: -40px;
-        z-index: 10;
+        z-index: 1;
+        &:hover {
+            -webkit-box-shadow: 0px 6px 10px 1px rgba(150,150,150,0.70);
+        -moz-box-shadow: 0px 6px 10px 1px rgba(150,150,150,0.70);
+        box-shadow: 0px 6px 10px 1px rgba(150,150,150,0.70);
+        }
     }
     
     .map {
-        height: 700px;
+        border: 1px solid #DDDDDD;
+        height: 500px;
         overflow: hidden;
-        width: inherit;
-        z-index: 1;
-        img {
-            margin-left: -1300px;
-            margin-top: -200px
-        }
+        width: inherit; 
     }
 }
 
