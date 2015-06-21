@@ -2,16 +2,35 @@
  * Salon Carousel
  */
 .salon-carousel {
+    .carousel-caption h3 {
+      font-weight: lighter;
+      color: #ddd;
+      letter-spacing: 1px;
+    }
     .carousel-control {
         &.left, &.right {
             background-image: none;
         }
     }
-    .crop-slide-image {
+    .carousel-indicators li {
+        background-color: none;
+        border: 1px solid @brand-green-accent;
+        margin: 0 0.4em; 
+    }
+    .carousel-indicators .active {
+        background-color: @brand-green;
+    }
+    .crop-slide-image {        
         height: @salon-carousel-sm;
         overflow: hidden;
+        overflow: hidden;
+    -webkit-box-shadow: inset 0px -11px 13px -6px rgba(0,0,0,0.70);
+-moz-box-shadow: inset 0px -11px 13px -6px rgba(0,0,0,0.70);
+box-shadow: inset 0px -11px 13px -6px rgba(0,0,0,0.70);
         img {        
             height: @salon-carousel-sm + 200px;
+            z-index: -1;
+            position: relative;
         }        
     }
 }
