@@ -23,11 +23,14 @@
     </script>
     <script type="text/javascript">
       function initialize() {
-        var myLatlng = new google.maps.LatLng(29.979151, -90.095520);
+        var myLatlng = new google.maps.LatLng(29.979390, -90.095690);
         var mapOptions = {
           center: myLatlng,
           zoom: 15,
-            disableDefaultUI: true
+            disableDefaultUI: true,
+            zoomControl: true,
+            draggable: false,
+            tilt: 25
         };
         var map = new google.maps.Map(document.getElementById('salon-map'),
             mapOptions);
@@ -51,9 +54,6 @@
                     <li><a href="#stylists">stylists</a></li>
                 </ul>                            
             </nav><!-- end nav -->
-            
-            				<div id="map-canvas"></div>
-
             
             <!-- header -->
             <header>
@@ -141,12 +141,10 @@
                            <div class="col-md-2">closed</div>
                         </div>
                     </div>
-                    <div class="address-container" onclick="function()">
+                    <div class="address-container unselectable" onclick="function()">
                         <p>903 North Carrollton Avenue, New Orleans, LA</p>
                     </div>
-                    <div id="salon-map" class="map">
-<!--                        <img src="web/assets/images/maps/map2.png" alt="le-parc-salon-location-map">-->
-                    </div>
+                    <div id="salon-map" class="map"></div>
 				</div><!-- end salon -->
 								
 				<!-- services -->
