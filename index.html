@@ -36,8 +36,56 @@
 				<img src="web/assets/affinity-files/logo.svg" alt="le parc salon logo" height="200px">
 			</header><!-- end header -->
 			
-            <!-- -->
-            <!-- -->
+            <!-- salon carousel -->
+            <div id="salon-carousel" class="salon-carousel">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                                        
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="crop-slide-image">
+                                <img src="web/assets/images/slide-show/karatin1.jpg" alt="...">
+                            </div>
+                            <div class="carousel-caption">
+                            ...
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="crop-slide-image">
+                                <img src="web/assets/images/slide-show/karatin3.jpg" alt="...">
+                            </div>
+                            <div class="carousel-caption">
+                            ...
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="crop-slide-image">
+                                <img src="web/assets/images/slide-show/owner-chair.jpg" alt="...">
+                            </div>
+                            <div class="carousel-caption">
+                            ...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <!-- end salon carousel -->
 			
             <!-- salon components -->
             <h2 class="salon-components-content-spacing">Salon</h2>
@@ -250,6 +298,7 @@
                     window.scrollTo(0,0);
                 });
             });
+            $('#salon-carousel').carousel();
         </script>
 		<!-- end javascript -->
 	</body>

@@ -29,6 +29,9 @@ button {
   color: #000000;
 }
 /********
+ * Carousel
+ */
+/********
  * Header
  */
 /******************
@@ -37,6 +40,37 @@ button {
 /********
  * Footer
  */
+/****************
+ * Salon Carousel
+ */
+.salon-carousel .carousel-caption h3 {
+  font-weight: lighter;
+  color: #ddd;
+  letter-spacing: 1px;
+}
+.salon-carousel .carousel-control.left,
+.salon-carousel .carousel-control.right {
+  background-image: none;
+}
+.salon-carousel .carousel-indicators li {
+  background-color: none;
+  border: 1px solid #3fa95a;
+}
+.salon-carousel .carousel-indicators .active {
+  background-color: #40ba5f;
+}
+.salon-carousel .crop-slide-image {
+  height: 350px;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0px -11px 13px -6px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0px -11px 13px -6px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px -11px 13px -6px rgba(0, 0, 0, 0.7);
+}
+.salon-carousel .crop-slide-image img {
+  height: 550px;
+  z-index: -1;
+  position: relative;
+}
 /******************
  * Footer
  */
@@ -80,7 +114,8 @@ footer p {
 header {
   background-color: #FFFFFF;
   padding: 50px 0;
-  margin-top: 40px;
+  margin-top: 10px;
+  padding-top: 60px;
 }
 header h1 {
   font-family: 'Tangerine', cursive;
@@ -250,9 +285,27 @@ h2 {
   overflow: hidden;
   width: 150px;
 }
-.to-top-button {
+/********
+ * To Top Button
+ */
+.to-top-button button {
+  background-color: transparent;
+  border-radius: 5%;
   bottom: 0;
+  border: 1px solid #cccccc;
+  height: 60px;
+  margin: 1.4em;
+  opacity: 0.5;
+  padding: 1em;
   position: fixed;
   right: 0;
-  z-index: 2;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  width: 60px;
+  z-index: 9;
+}
+.to-top-button button:hover {
+  background-color: #333333;
+  color: #DDDDDD;
+  opacity: 0.8;
 }
