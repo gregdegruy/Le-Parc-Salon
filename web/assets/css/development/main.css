@@ -54,6 +54,9 @@ button {
 .salon-carousel .carousel-indicators li {
   background-color: none;
   border: 1px solid #3fa95a;
+  border-radius: 0;
+  height: 8px;
+  width: 8px;
   margin: 0 0.4em;
 }
 .salon-carousel .carousel-indicators .active {
