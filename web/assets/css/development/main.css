@@ -339,9 +339,16 @@ h2 {
 .services table {
   font-weight: 200;
 }
+.stylists h3 {
+  text-align: center;
+  margin: 1.4em;
+}
 .stylists .staff-picture {
   border-radius: 50%;
+  display: block;
   height: 150px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 4em;
   overflow: hidden;
   width: 150px;
