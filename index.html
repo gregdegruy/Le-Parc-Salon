@@ -21,6 +21,7 @@
 	<body>
 		<div id="main-container">
            
+           
             <!-- nav -->
 		    <nav class="headroom">
                 <ul>
@@ -116,14 +117,12 @@
                            <div class="col-md-2">closed</div>
                         </div>
                     </div>
-                    <div class="address-container">
-                        <p>903 North Carrollton Avenue, New Orleans, LA</p>
+                    <div class="address-container unselectable" onclick="function()">
+                        <a href=""><p>903 North Carrollton Avenue, New Orleans, LA</p></a>                    
                     </div>
-                    <div class="map">
-                        <img src="web/assets/images/maps/map2.png" alt="le-parc-salon-location-map">
-                    </div>
+                    <div id="salon-map" class="map"></div>
 				</div><!-- end salon -->
-				
+								
 				<!-- services -->
 				<h2>Services</h2>
 				<div id="services" class="services">					
@@ -290,6 +289,7 @@
         <!-- javascript -->
 		<script type="text/javascript" src="lib/assets/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="vendor/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6OT7PLvySWR857_k4SMIbKkg91VLwb0c"></script>
 		<script type="text/javascript" src="web/assets/js/development/main.js"></script>
 		<script type="text/javascript">
             $(document).ready(function () {
@@ -298,7 +298,25 @@
                     window.scrollTo(0,0);
                 });
             });
-            $('#salon-carousel').carousel();
+            function initialize() {
+        var myLatlng = new google.maps.LatLng(29.979390, -90.095690);
+        var mapOptions = {
+          center: myLatlng,
+          zoom: 15,
+            disableDefaultUI: true,
+            zoomControl: true,
+            draggable: false,
+            scrollwheel: false,
+            tilt: 25
+        };
+        var map = new google.maps.Map(document.getElementById('salon-map'),
+            mapOptions);
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
         </script>
 		<!-- end javascript -->
 	</body>

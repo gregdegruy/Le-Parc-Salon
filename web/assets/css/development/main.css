@@ -27,6 +27,30 @@ button {
 .nav.navbar-nav li a:active {
   color: #000000;
 }
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+a:active {
+  color: #000000;
+  text-decoration: none;
+}
 /********
  * Carousel
  */
@@ -207,6 +231,14 @@ nav ul li:last-child {
   font-size: 3em;
   font-weight: 200;
 }
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 h2 {
   font-family: 'Tangerine', cursive;
   font-size: 6em;
@@ -272,28 +304,33 @@ h2 {
   background-color: #FEFEFE;
   border: 1px solid #EEEEEE;
   border-radius: 50%;
-  display: flex;
+  -webkit-box-shadow: 0px 4px 4px 1px rgba(150, 150, 150, 0.7);
+  -moz-box-shadow: 0px 4px 4px 1px rgba(150, 150, 150, 0.7);
+  box-shadow: 0px 4px 4px 1px rgba(150, 150, 150, 0.7);
+  cursor: pointer;
   font-size: 2.8em;
   font-weight: 200;
   height: 7.5em;
   padding: 0.2em;
   padding-top: 0.6em;
   position: relative;
+  transition: all 0.2s ease-in-out;
   width: 7.5em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -40px;
-  z-index: 10;
-}
-.salon .map {
-  height: 700px;
-  overflow: hidden;
-  width: inherit;
   z-index: 1;
 }
-.salon .map img {
-  margin-left: -1300px;
-  margin-top: -200px;
+.salon .address-container:hover {
+  -webkit-box-shadow: 0px 6px 10px 1px rgba(150, 150, 150, 0.7);
+  -moz-box-shadow: 0px 6px 10px 1px rgba(150, 150, 150, 0.7);
+  box-shadow: 0px 6px 10px 1px rgba(150, 150, 150, 0.7);
+}
+.salon .map {
+  border: 1px solid #DDDDDD;
+  height: 500px;
+  moverflow: hidden;
+  width: inherit;
 }
 .services h6 {
   font-size: 1.2em;
@@ -319,7 +356,7 @@ h2 {
   border: 1px solid #cccccc;
   height: 60px;
   margin: 1.4em;
-  opacity: 0.5;
+  opacity: 0.4;
   padding: 1em;
   position: fixed;
   right: 0;
