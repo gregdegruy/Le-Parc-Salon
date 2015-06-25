@@ -5,20 +5,28 @@ nav {
     background-color: @brand-green-accent;
     border-bottom: solid 2px @brand-green;
     border-radius: 0;
-    box-shadow: 0px 0px 4px rgba(50, 50, 50, 0.6);
+    box-shadow: 0px 0px 4px rgba(40, 40, 40, 0.6);
     font-size: 1.2em;   
     font-family: Calibri, Helvetica;
     font-weight: 100;
     padding: 0.6em;
     text-align: center;
     z-index: 10;
+    .brand {
+        border-right: 1px solid @brand-green;
+        font-family: @brand-font;
+        left: 0;
+        padding: 0 1.2em;
+        position: absolute;        
+    }
     ul {
         list-style-type: none;
         margin: 0;
+        margin-left: -10px;
         width: auto;
         li {
             display: inline;
-            margin: 0em 0.2em;
+            margin: 0em 0.4em;
             padding: 0.8em 0.4em;
             a {
                 color: #000000;
@@ -39,7 +47,7 @@ nav {
         }
         span {
             color: @brand-green;
-            margin-left: 1em;
+            margin-right: 0.6em;
         }
     }
 } 
