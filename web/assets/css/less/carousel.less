@@ -3,6 +3,8 @@
  */
 .salon-carousel {
     
+    border-top: 2px solid @brand-green;
+    
     .carousel-caption h3 {
       font-weight: lighter;
       color: #ddd;
@@ -20,9 +22,11 @@
         height: 8px;
         width: 8px;
         margin: 0 0.4em;
+        z-index: -1;
     }
     .carousel-indicators .active {
         background-color: @brand-green;
+        z-index: -1;
     }
     .crop-slide-image {        
         height: @salon-carousel-sm;

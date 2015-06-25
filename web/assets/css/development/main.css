@@ -71,6 +71,9 @@ hr {
 /****************
  * Salon Carousel
  */
+.salon-carousel {
+  border-top: 2px solid #40ba5f;
+}
 .salon-carousel .carousel-caption h3 {
   font-weight: lighter;
   color: #ddd;
@@ -87,9 +90,11 @@ hr {
   height: 8px;
   width: 8px;
   margin: 0 0.4em;
+  z-index: -1;
 }
 .salon-carousel .carousel-indicators .active {
   background-color: #40ba5f;
+  z-index: -1;
 }
 .salon-carousel .crop-slide-image {
   height: 350px;
@@ -112,7 +117,7 @@ hr {
 footer {
   background-color: #e2404b;
   border-top: 0.5em solid #ba4048;
-  color: #CCCCCC;
+  color: #DDDDDD;
   height: 500px;
   font-weight: 100;
   margin-top: -500px;
@@ -120,6 +125,7 @@ footer {
 }
 footer button {
   background-color: #ba4048;
+  color: #EEEEEE;
   font-size: 1.6em;
   width: 300px;
   margin: 1em 0;
