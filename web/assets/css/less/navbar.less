@@ -5,32 +5,40 @@ nav {
     background-color: @brand-green-accent;
     border-bottom: solid 2px @brand-green;
     border-radius: 0;
-    font-family: @brand-font;
-    font-size: 1.8em;    
+    font-size: 1.2em;   
+    font-family: Calibri, Helvetica;
+    padding: 0.4em;
     text-align: center;
     z-index: 10;
     ul {
         list-style-type: none;
         margin: 0;
         width: auto;
-            li {
-                display: inline;
-                margin: 0em 0.2em;
-                padding: 0.2em 0.3em;
-                a {
+        li {
+            display: inline;
+            margin: 0em 0.2em;
+            padding: 0.6em 0.6em;
+            a {
+                color: #000000;
+                &:hover {
                     color: #000000;
-                    &:hover {
-                        color: #000000;
-                        text-decoration: none;
-                    }
-                }
-                &:hover {                           
-                    background-color: @brand-green;
-                }
-                &:last-child {
-                    margin-right: 2em;
+                    text-decoration: none;
                 }
             }
+            &:hover {                           
+                background-color: @brand-green;
+                span {
+                    color: white;
+                }
+            }
+            &:last-child {
+                margin-right: 2em;
+            }
+        }
+        span {
+            color: @brand-green;
+            margin-left: 1em;
+        }
     }
 } 
 
