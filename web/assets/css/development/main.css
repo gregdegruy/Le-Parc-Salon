@@ -72,7 +72,7 @@ hr {
  * Salon Carousel
  */
 .salon-carousel {
-  border-top: 2px solid #40ba5f;
+  border-top: 1px solid #40ba5f;
 }
 .salon-carousel .carousel-caption h3 {
   font-weight: lighter;
@@ -105,8 +105,9 @@ hr {
 }
 .salon-carousel .crop-slide-image img {
   height: 550px;
-  z-index: -1;
+  margin-top: -100px;
   position: relative;
+  z-index: -1;
 }
 /******************
  * Footer
@@ -190,9 +191,10 @@ nav ul {
   width: auto;
 }
 nav ul li {
+  text-align: center;
   display: inline;
   margin: 0em 0.4em;
-  padding: 0.8em 0.4em;
+  padding: 0.9em 0.4em;
 }
 nav ul li a {
   color: #000000;
@@ -368,6 +370,10 @@ h2 {
 }
 .services table {
   font-weight: 200;
+}
+.services table tr td:nth-child(2) {
+  position: absolute;
+  right: 4em;
 }
 .stylists h3 {
   font-size: 1.8em;
