@@ -24,11 +24,13 @@
            
             <!-- nav -->
 		    <nav class="headroom">
-                <ul>
-                    <li><a href="#salon">salon</a></li>
-                    <li><a href="#services">services</a></li>
-                    <li><a href="#stylists">stylists</a></li>
-                </ul>                            
+                <p class="brand">
+                    <span class="glyphicon glyphicon-tree-deciduous"></span>L
+                </p>
+                <ul>                    
+                    <a href="#services"><li>Services</li></a>
+                    <a href="#stylists"><li>Stylists</li></a>
+                </ul>          
             </nav><!-- end nav -->
             
             <!-- header -->
@@ -37,7 +39,7 @@
 				<img src="web/assets/affinity-files/logo.svg" alt="le parc salon logo" height="200px">
 			</header><!-- end header -->
 			
-            <!-- salon carousel -->
+            <!-- salon carousel -->            
             <div id="salon-carousel" class="salon-carousel">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -45,13 +47,14 @@
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                     </ol>
                                         
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <div class="crop-slide-image">
-                                <img src="web/assets/images/slide-show/karatin1.jpg" alt="...">
+                                <img src="web/assets/images/slide-show/karatin2.jpg" alt="...">
                             </div>
                             <div class="carousel-caption">
                             ...
@@ -68,6 +71,14 @@
                         <div class="item">
                             <div class="crop-slide-image">
                                 <img src="web/assets/images/slide-show/owner-chair.jpg" alt="...">
+                            </div>
+                            <div class="carousel-caption">
+                            ...
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="crop-slide-image">
+                                <img src="web/assets/images/slide-show/staff-chair.jpg" alt="...">
                             </div>
                             <div class="carousel-caption">
                             ...
@@ -95,9 +106,11 @@
 				<div id="salon" class="salon">					
 					<p id="le-parc-salon-mission" class="le-parc-salon-mission">
 						At Le Parc Salon, we believe everyone is entitled to look good and feel good. Come and get the experience of a lifetime in a warm and friendly enviorment.
-					</p>
+					</p>			
+					<hr>
 					<p class="call-to-action-sm">Tap and Call</p>
                     <a href="tel:+5043094376"><button class="salon-phone-button">(504) 309-4376 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></button></a>
+                    <hr>
                     <p class="call-to-action-sm">Hours of Operation</p>
                     <div class="container-fluid hours-of-operation">
                         <div class="row">
@@ -117,7 +130,7 @@
                            <div class="col-md-2">closed</div>
                         </div>
                     </div>
-                    <div class="address-container unselectable" onclick="function()">
+                    <div class="address-container unselectable">
                         <a href=""><p>903 North Carrollton Avenue, New Orleans, LA</p></a>                    
                     </div>
                     <div id="salon-map" class="map"></div>
@@ -126,7 +139,7 @@
 				<!-- services -->
 				<h2>Services</h2>
 				<div id="services" class="services">					
-					<div class="hair-services">
+					<div class="hair-services">                        
 					    <h6>Hair Services</h6>
 					    <table>
 					        <tr>
@@ -158,7 +171,8 @@
 					        </tr>
 					    </table>  
 					</div>
-					<div class="hair-cuts">
+					<hr>
+                    <div class="hair-cuts">
 					    <h6>Hair Cuts</h6>
 					    <table>
 					        <tr>
@@ -190,7 +204,8 @@
 					        </tr>
 					    </table> 				       
 					</div>
-					<div class="color-services">
+					<hr>
+                    <div class="color-services">
 					    <h6>Color Services</h6>
 					    <table>					        
 					        <tr>
@@ -210,7 +225,8 @@
 					        </tr>
 					    </table> 
 					</div>
-					<div class="chemical-services">
+					<hr>
+                    <div class="chemical-services">
 					    <h6>Chemical Services</h6>    
 					    <table>					        
 					        <tr>
@@ -227,7 +243,8 @@
 					        </tr>
 					    </table> 
 					</div>
-					<div class="permanent-wave">
+					<hr>
+                    <div class="permanent-wave">
 					    <h6>Permanent Wave</h6>
 					    <table>					        
 					        <tr>
@@ -238,7 +255,8 @@
 					        </tr>
 					    </table> 
 					</div>
-					<div class="waxing-services">
+					<hr>
+                    <div class="waxing-services">
 					    <h6>Waxing Services</h6>
 					    <table>					        
 					        <tr>
@@ -276,9 +294,8 @@
 			<!-- footer -->
 			<footer>		
                 <p>Connect With Le Parc Salon</p>	
-                <hr>
-                <button>Like on Facebook</button>
-                <button>Endorse on LinkedIn</button>
+                <a href="https://www.facebook.com/LaParcSalon"><button>Like on Facebook</button></a>
+                <a href="https://www.linkedin.com/pub/tina-payton/37/7a9/255"><button>Endorse on LinkedIn</button></a>
                 <p class="copyright">Copyright 2015 Le Parc Salon. All rights reserved.</p>               </footer><!-- end footer -->
 		</div>
 		
