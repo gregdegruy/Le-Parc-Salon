@@ -152,7 +152,7 @@ header {
   padding-top: 60px;
 }
 header h1 {
-  font-family: 'Tangerine', cursive;
+  font-family: 'Tangerine', Calibri, cursive;
   font-size: 66pt;
   font-weight: bold;
   text-align: center;
@@ -179,7 +179,7 @@ nav {
 }
 nav .brand {
   border-right: 1px solid #40ba5f;
-  font-family: 'Tangerine', cursive;
+  font-family: 'Tangerine', Calibri, cursive;
   left: 0;
   padding: 0 1.2em;
   position: absolute;
@@ -266,7 +266,7 @@ nav ul span {
   user-select: none;
 }
 h2 {
-  font-family: 'Tangerine', cursive;
+  font-family: 'Tangerine', Calibri, cursive;
   font-size: 6em;
   font-weight: 500;
   margin-bottom: -1.6em;
@@ -288,7 +288,7 @@ h2 {
 .salon h2,
 .services h2,
 .stylists h2 {
-  font-family: 'Tangerine', cursive;
+  font-family: 'Tangerine', Calibri, cursive;
   font-size: 6em;
   font-weight: 500;
   margin-top: -30px;
@@ -299,7 +299,7 @@ h2 {
   text-align: center;
 }
 .salon .le-parc-salon-mission {
-  font-family: 'Tangerine', cursive;
+  font-family: 'Tangerine', Calibri, cursive;
   font-size: 2.4em;
   font-weight: lighter;
   margin: 2em 0;
@@ -328,7 +328,7 @@ h2 {
   margin-left: 2em;
 }
 .salon .hours-of-operation .col-md-10 {
-  font-family: 'Tangerine', cursive;
+  font-family: 'Tangerine', Calibri, cursive;
   font-size: 1.2em;
   font-weight: 900;
 }
