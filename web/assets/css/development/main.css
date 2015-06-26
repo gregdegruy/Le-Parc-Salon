@@ -370,6 +370,7 @@ h2 {
 }
 .services table {
   font-weight: 200;
+  margin-left: 1em;
 }
 .services table tr td:nth-child(2) {
   position: absolute;
