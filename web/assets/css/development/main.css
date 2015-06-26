@@ -113,15 +113,15 @@ hr {
  * Footer
  */
 .sections-container {
-  margin-bottom: 650px;
+  margin-bottom: 550px;
 }
 footer {
   background-color: #e2404b;
   border-top: 0.5em solid #ba4048;
   color: #DDDDDD;
-  height: 500px;
+  height: 400px;
   font-weight: 100;
-  margin-top: -500px;
+  margin-top: -400px;
   text-align: center;
 }
 footer button {
@@ -135,9 +135,10 @@ footer button {
 footer .copyright {
   font-size: 0.6em;
   background-color: #ba4048;
+  bottom: 0;
   padding: 0.6em;
   margin: 0;
-  margin-top: 195px;
+  margin-top: 140px;
 }
 footer p {
   margin-top: 1em;
@@ -153,7 +154,7 @@ header {
 }
 header h1 {
   font-family: 'Tangerine', Calibri, cursive;
-  font-size: 66pt;
+  font-size: 6em;
   font-weight: bold;
   text-align: center;
 }
@@ -366,7 +367,7 @@ h2 {
 }
 .services h6 {
   font-size: 1.2em;
-  font-weight: 450;
+  font-weight: bold;
 }
 .services table {
   font-weight: 200;
