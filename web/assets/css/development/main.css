@@ -73,7 +73,19 @@ hr {
  */
 .salon-carousel-cta {
   background-color: #FFFFFF;
+  font-weight: 900;
   padding: 0.5em 1em;
+  padding-bottom: 6em;
+  text-align: center;
+}
+.salon-carousel-cta span.glyphicon {
+  font-size: 2em;
+}
+.carousel-header {
+  background-color: #e2404b;
+  font-family: 'Tangerine', Calibri, cursive;
+  font-size: 2em;
+  padding: 1em;
   text-align: center;
 }
 .salon-carousel {
