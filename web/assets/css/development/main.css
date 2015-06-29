@@ -205,10 +205,7 @@ nav ul li a:hover {
   text-decoration: none;
 }
 nav ul li:hover {
-  background-color: #40ba5f;
-}
-nav ul li:hover span {
-  color: #FFFFFF;
+  color: #EDEDED;
 }
 nav ul li:last-child {
   margin-right: 2em;
