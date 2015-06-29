@@ -24,7 +24,7 @@ Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html
 .jssorb21 {
     position: absolute;
     background-color: #3fa95a;
-    border-radius: 20%;
+    border-radius: 20px;
 }
 .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
     position: absolute;
@@ -77,31 +77,36 @@ Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html
 .jssora21l.jssora21ldn { background-position: -243px -33px; }
 .jssora21r.jssora21rdn { background-position: -303px -33px; }
 
+.jssor-caption-background {
+    background-color: black;
+}
+
 .jssor-caption {
-    text-shadow: 0px 2px 1px rgba(10, 10, 10, 0.8);
+    text-shadow: 0px 3px 2px rgba(5, 5, 5, 1);
     position: absolute; 
     width: 480px; 
     height: 120px; 
     top: 900px; 
     left: 30px; 
-    padding: 5px;
+    padding: auto;
     text-align: left; 
-    line-height: 36px; 
-    font-size: 30px;
+    line-height: 1.4em; 
+    font-size: 2.5em;
     color: #FFFFFF;    
 }
 
 .jssor-caption-header {
-    text-shadow: 0px 2px 1px rgba(10, 10, 10, 0.8);
+    text-decoration: underline;
+    text-shadow: 0px 3px 2px rgba(5, 5, 5, 1);
     position: absolute; 
     width: 480px; 
     height: 120px; 
     top: 700px; 
-    left: 30px; 
-    padding: 5px;
+    left: 30px;
+    padding: auto;
     text-align: left; 
-    line-height: 60px; 
     text-transform: uppercase; 
-    font-size: 50px;
+    line-height: 1.4em; 
+    font-size: 4.8em;
     color: #FFFFFF;    
 }
