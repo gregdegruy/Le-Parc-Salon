@@ -13,8 +13,8 @@
 }
 
 .carousel-header {
-    background-color: @brand-red;
-    font-family: @brand-font;
+    background-color: $brand-red;
+    font-family: $brand-font;
     font-size: 2em;
     padding: 1em;    
     text-align: center;
@@ -22,7 +22,7 @@
 
 .salon-carousel {
     
-    border-top: 1px solid @brand-green;
+    border-top: 1px solid $brand-green;
     
     .carousel-caption h3 {
       font-weight: lighter;
@@ -36,7 +36,7 @@
     }
     .carousel-indicators li {
         background-color: none;
-        border: 1px solid @brand-green-accent;
+        border: 1px solid $brand-green-accent;
         border-radius: 0; 
         height: 8px;
         width: 8px;
@@ -44,18 +44,18 @@
         z-index: -1;
     }
     .carousel-indicators .active {
-        background-color: @brand-green;
+        background-color: $brand-green;
         z-index: -1;
     }
     .crop-slide-image {        
-        height: @salon-carousel-sm;
+        height: $salon-carousel-sm;
         overflow: hidden;
         overflow: hidden;
     -webkit-box-shadow: inset 0px -11px 13px -6px rgba(0,0,0,0.70);
 -moz-box-shadow: inset 0px -11px 13px -6px rgba(0,0,0,0.70);
 box-shadow: inset 0px -11px 13px -6px rgba(0,0,0,0.70);
         img {        
-            height: @salon-carousel-sm + 200px;                   margin-top: -100px;
+            height: $salon-carousel-sm + 200px;                   margin-top: -100px;
             position: relative;
             z-index: -1;
         }        
