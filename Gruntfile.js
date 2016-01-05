@@ -3,7 +3,7 @@
  * @param {object} grunt [[Description]]
  */
 module.exports = function (grunt) {
-    
+
     'use strict';
 
     require('jit-grunt')(grunt);
@@ -17,7 +17,7 @@ module.exports = function (grunt) {
                     'src/development/css/main.css': 'src/development/css/sass/main.scss'
                 }
             }
-        },
+        },        
         // js generation 
         concat: {
             js: {
@@ -33,7 +33,14 @@ module.exports = function (grunt) {
                 src: 'src/development/js/main.js',
                 dest: 'src/production/js/main.min.js'
             }
-        }
+        },
+        // file change listener
+        watch: {
+			css: {
+				files: 'src/development/css/sass/**/*.scss',
+				tasks: ['sass']
+			}
+		}
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
@@ -41,6 +48,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
+    // custom task execution
     grunt.registerTask('gregdegruy', function () {
         console.log('✩ Greg Universe ✩');
     });
