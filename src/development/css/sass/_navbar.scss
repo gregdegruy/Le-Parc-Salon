@@ -1,6 +1,5 @@
-/********
- * Navbar
- */
+// _navbar.scss
+
 nav {    
     background-color: $leparc-green-accent;
     border-bottom: solid 2px $leparc-green;
@@ -12,7 +11,7 @@ nav {
     padding: 0.6em;
     text-align: center;
     z-index: 10;
-    .leparc {
+    .leparc-l {
         border-right: 1px solid $leparc-green;
         font-family: $leparc-font;
         left: 0;
