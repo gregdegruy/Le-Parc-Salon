@@ -1,0 +1,18 @@
+// _header.scss
+
+header {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    padding-top: 60px;
+    h1 {
+        font-family: $leparc-font;
+        font-size: $brand-font-size;
+        font-weight: bold;
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+}
