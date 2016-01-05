@@ -1,59 +1,57 @@
-module.exports = function(grunt) {
+/**
+ * Le Parc Salon gruntfile
+ * @param {object} grunt [[Description]]
+ */
+module.exports = function (grunt) {
+
+    'use strict';
 
     require('jit-grunt')(grunt);
 
-     grunt.initConfig({
+    grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-         // concat for less files
-         less: {
-             development: {
-                 options: {
-                     paths: ["web/assets/css"],
-                     compress: false,
-                    yuicompress: false,
-                    optimization: 2
-                 },
-                 files: {
-                    "web/assets/css/development/main.css": "web/assets/css/less/main.less" // dest: src
+        // sass generation
+        sass: {
+            development: {
+                files: {
+                    'src/development/css/main.css': 'src/development/css/sass/main.scss'
                 }
-             },
-             production : {}
-         },
-         watch: {
-          styles: {
-            files: ["web/assets/css/less/**/*.less"],
-            tasks: ["less"],
-            options: {
-              nospawn: true
             }
-          }
-        },
-         // concat for js files
-         concat: {
+        },        
+        // js generation 
+        concat: {
             js: {
-               src: [
-                   "vendor/assets/headroom/headroom.js",
-                   "web/assets/js/src/navbar.js",
-               ],
-                dest: "web/assets/js/development/main.js"
+                src: [
+                    'dependencies/headroom/headroom.js',
+                    'src/development/js/navbar.js'
+                ],
+                dest: 'src/development/js/main.js'
             }
         },
-         uglify: {
+        uglify: {
             js: {
-                src: "web/assets/js/development/main.js",
-                dest: "web/assets/js/production/main.min.js"
+                src: 'src/development/js/main.js',
+                dest: 'src/production/js/main.min.js'
             }
-        }
-     });
-        
-    grunt.loadNpmTasks("grunt-contrib-less");
-    grunt.loadNpmTasks("grunt-contrib-watch");
-    grunt.loadNpmTasks("grunt-contrib-concat");
-    grunt.loadNpmTasks("grunt-contrib-uglify");
-    
-    grunt.registerTask("gregdegruy", function () {
-        console.log("✩ Greg Universe ✩");
+        },
+        // file change listener
+        watch: {
+			css: {
+				files: 'src/development/css/sass/**/*.scss',
+				tasks: ['sass']
+			}
+		}
     });
-    grunt.registerTask('js', ["gregdegruy", "concat", "uglify"]);
-    grunt.registerTask("default", ["gregdegruy", "less", "watch"]);
+
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+
+    // custom task execution
+    grunt.registerTask('gregdegruy', function () {
+        console.log('✩ Greg Universe ✩');
+    });
+    grunt.registerTask('js', ['gregdegruy', 'concat', 'uglify']);
+    grunt.registerTask('default', ['gregdegruy']);
 };

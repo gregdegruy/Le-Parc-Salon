@@ -1,0 +1,62 @@
+// _salon Carousel.scss
+
+.salon-carousel-cta {
+    background-color: #FFFFFF;
+    font-weight: 900;
+    padding: 0.5em 1em;
+    padding-bottom: 6em;
+    text-align: center;
+    span.glyphicon {
+        font-size: 2em;
+    }
+}
+
+.carousel-header {
+    background-color: $leparc-red;
+    font-family: $leparc-font;
+    font-size: 2em;
+    padding: 1em;    
+    text-align: center;
+}
+
+.salon-carousel {
+    
+    border-top: 1px solid $leparc-green;
+    
+    .carousel-caption h3 {
+      font-weight: lighter;
+      color: #ddd;
+      letter-spacing: 1px;
+    }
+    .carousel-control {
+        &.left, &.right {
+            background-image: none;
+        }
+    }
+    .carousel-indicators li {
+        background-color: none;
+        border: 1px solid $leparc-green-accent;
+        border-radius: 0; 
+        height: 8px;
+        width: 8px;
+        margin: 0 0.4em;
+        z-index: -1;
+    }
+    .carousel-indicators .active {
+        background-color: $leparc-green;
+        z-index: -1;
+    }
+    .crop-slide-image {        
+        height: $salon-carousel-sm;
+        overflow: hidden;
+        overflow: hidden;
+    -webkit-box-shadow: inset 0px -11px 13px -6px rgba(0,0,0,0.70);
+-moz-box-shadow: inset 0px -11px 13px -6px rgba(0,0,0,0.70);
+box-shadow: inset 0px -11px 13px -6px rgba(0,0,0,0.70);
+        img {        
+            height: $salon-carousel-sm + 200px;                   margin-top: -100px;
+            position: relative;
+            z-index: -1;
+        }        
+    }
+}
