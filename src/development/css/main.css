@@ -308,6 +308,7 @@ h2 {
 .services h6 {
   font-size: 1.2em;
   font-weight: bold; }
+
 .services table {
   font-weight: 200;
   margin-left: 1em; }
@@ -319,6 +320,7 @@ h2 {
   font-size: 1.8em;
   margin: 1.4em;
   text-align: center; }
+
 .stylists .staff-picture {
   border-radius: 50%;
   display: block;
@@ -348,5 +350,3 @@ h2 {
     background-color: #333333;
     color: #DDDDDD;
     opacity: 0.8; }
-
-/*# sourceMappingURL=main.css.map */
