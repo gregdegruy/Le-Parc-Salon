@@ -2,9 +2,10 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var uglify = require('gulp-uglify');
 
 /**
- * Sass compile tasks 
+ * CSS compile tasks 
  */
 gulp.task('sass', function () {                  
     gulp.src('./src/development/css/sass/main.scss')
@@ -16,6 +17,11 @@ gulp.task('sass', function () {
 gulp.task('sass:watch', function () {
    gulp.watch('./src/development/css/sass/**/*.scss', ['sass']);
 });
+
+/**
+ * JS compile tasks 
+ */
+
 
 /**
  * Default task
