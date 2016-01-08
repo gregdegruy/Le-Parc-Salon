@@ -11,34 +11,37 @@ const uglify = require('gulp-uglify');
 /**
  * CSS compile tasks 
  */
-gulp.task('sass', function () {                  
+gulp.task('sass', () => {                  
     return gulp.src('./src/development/css/sass/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./src/development/css/'))
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest('./src/production/css/'));
 });
-gulp.task('sass:watch', function () {
+gulp.task('sass:watch', () => {
    return gulp.watch('./src/development/css/sass/**/*.scss', ['sass']);
 });
 
 /**
  * JS compile tasks 
  */
-gulp.task('babel', function () {
-  return gulp.src('./src/development/js/**/*.js')
+gulp.task('babel', () => {
+  return gulp.src([
+        './dependencies/headroom/headroom.js',
+        './src/development/js/modules/**/*.js'  
+    ])
     .pipe(sourcemaps.init())    
-    .pipe(concat('app.js'))
+    .pipe(concat('main.js'))
     .pipe(babel({
         presets: ['es2015']  
     }))    
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./src/development/'));
+    .pipe(gulp.dest('./src/development/js'));
 });
 
 /**
  * Default task
  */
-gulp.task('default', function () {
+gulp.task('default', () => {
   console.log('✩ Greg Universe ✩');
 });
