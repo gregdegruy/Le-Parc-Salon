@@ -27,6 +27,8 @@ gulp.task('sass:watch', () => {
  */
 gulp.task('babel', () => {
   return gulp.src([
+        './dependencies/jssor/js/jssor.slider.min.js',
+        './dependencies/jssor/js/full-width-slider.js',
         './dependencies/headroom/headroom.js',
         './src/development/js/modules/**/*.js'  
     ])
