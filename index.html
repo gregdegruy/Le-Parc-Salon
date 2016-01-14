@@ -1,378 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="desciption" content="">
-		<meta name="keywords" content="hair salon, new orleans">
-		<meta name="author" content="Greg Degruy">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Le Parc Salon</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="desciption" content="">
+    <meta name="keywords" content="hair salon, new orleans">
+    <meta name="author" content="Greg Degruy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" type="text/css" href="vendor/assets/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="vendor/assets/jssor/css/full-width-slider.css">
-		<link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="web/assets/css/development/main.css">
-		<!-- allow older IE to run HTML5 -->
-		<!--[if IE]>
+    <title>Le Parc Salon</title>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dependencies/jssor/css/full-width-slider.css">
+    <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="src/development/css/main.css">
+    <!-- allow older IE to run HTML5 -->
+    <!--[if IE]>
 	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	    <![endif]-->
-	</head>
-	<body>
-		<div id="main-container">
-            <!-- nav -->
-		    <nav class="headroom">
-                <p class="brand">
-                    <span class="glyphicon glyphicon-tree-deciduous"></span>L
-                </p>
-                <ul>
-                    <a href="#services"><li>Services</li></a>
-                    <a href="#stylists"><li>Stylists</li></a>
-                </ul>
-            </nav>
-            <!-- end nav -->
+</head>
 
-            <!-- header -->
-            <header>
-				<h1>Le Parc Salon</h1>
-				<img src="web/assets/affinity-files/logo.svg" alt="le parc salon logo" height="200px">				
-			</header>
-            <!-- end header -->
-            
-            <!-- slider cta -->
-                <div class="salon-carousel-cta">
-                    <p>Scroll down for more</p>
-                    <span class="glyphicon glyphicon-menu-down"></span>
-                </div>
-                <!-- end slider cta -->
+<body>
+    <div id="main-container">
+        <!-- nav -->
+        <nav class="headroom">
+            <p class="leparc-l">
+                <span class="glyphicon glyphicon-tree-deciduous"></span>L
+            </p>
+            <ul>
+                <a href="#services">
+                    <li>Services</li>
+                </a>
+                <a href="#stylists">
+                    <li>Stylists</li>
+                </a>
+            </ul>
+        </nav>
+        <!-- end nav -->
 
-            <!-- Jssor Slider Begin -->
-            <div class="carousel-header">
-                Swipe to Explore our Gallery
-            </div>
-            <div id="slider1_container" style="position: relative; margin: 0 auto;
+        <!-- header -->
+        <header>
+            <h1>Le Parc Salon</h1>
+            <img src="images/affinity-files/logo.svg" alt="le parc salon logo" height="200px">
+        </header>
+        <!-- end header -->
+
+        <!-- slider cta -->
+        <div class="salon-carousel-cta">
+            <p>Scroll down for more</p>
+            <span class="glyphicon glyphicon-menu-down"></span>
+        </div>
+        <!-- end slider cta -->
+
+        <!-- Jssor Slider Begin -->
+        <div class="carousel-header">
+            Swipe to Explore our Gallery
+        </div>
+        <div id="slider1_container" style="position: relative; margin: 0 auto;
                 top: 0px; left: 0px; width: 1300px; height: 1160px; overflow: hidden;">
-                <!-- Slides Container -->
-                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
+            <!-- Slides Container -->
+            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
                     height: 1200px; overflow: hidden;">
-                    <div>
-                        <img u="image" src="web/assets/images/slide-show/karatin2.jpg" />
-                            <div class="jssor-caption-header">Image Description
-                            </div>
-                            <div class="jssor-caption">
-                                    Build your slider with anything, includes image, content, text, html, photo, picture
-                            </div>
+                <div>
+                    <img u="image" src="images/slide-show/karatin2.jpg" />
+                    <div class="jssor-caption-header">Image Description
                     </div>
-                    <div>
-                        <img u="image" src="web/assets/images/slide-show/karatin3.jpg" />
-                            <div class="jssor-caption-header">Image Description
-                            </div>
-                            <div class="jssor-caption">
-                                    Build your slider with anything, includes image, content, text, html, photo, picture
-                            </div>
-                    </div>
-                    <div>
-                        <img u="image" src="web/assets/images/slide-show/owner-chair.jpg" />
-                            <div class="jssor-caption-header">Image Description
-                            </div>
-                            <div class="jssor-caption">
-                                    Build your slider with anything, includes image, content, text, html, photo, picture
-                            </div>
-                    </div>
-                    <div>
-                        <img u="image" src="web/assets/images/slide-show/staff-chair.jpg" />
-                            <div class="jssor-caption-header">Image Description
-                            </div>
-                            <div class="jssor-caption">
-                                    Build your slider with anything, includes image, content, text, html, photo, picture
-                            </div>
-                    </div>
-                    <div>
-                        <img u="image" src="web/assets/images/slide-show/dryer.jpg" />
-                            <div class="jssor-caption-header">Image Description
-                            </div>
-                            <div class="jssor-caption">
-                                    Build your slider with anything, includes image, content, text, html, photo, picture
-                            </div>
-                    </div>
-                    <div>
-                        <img u="image" src="web/assets/images/slide-show/entrance.jpg" />
-                            <div class="jssor-caption-header">Image Description
-                            </div>
-                            <div class="jssor-caption">
-                                    Build your slider with anything, includes image, content, text, html, photo, picture
-                            </div>
+                    <div class="jssor-caption">
+                        Build your slider with anything, includes image, content, text, html, photo, picture
                     </div>
                 </div>
-                <!-- bullet navigator container -->
-                <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
-                    <!-- bullet navigator item prototype -->
-                    <div u="prototype"></div>
+                <div>
+                    <img u="image" src="images/slide-show/karatin3.jpg" />
+                    <div class="jssor-caption-header">Image Description
+                    </div>
+                    <div class="jssor-caption">
+                        Build your slider with anything, includes image, content, text, html, photo, picture
+                    </div>
                 </div>
-                <!--#endregion Bullet Navigator Skin End -->     
-                <!-- Arrow Left -->
-                <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
-                </span>
-                <!-- Arrow Right -->
-                <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
-                </span>
-                <!--#endregion Arrow Navigator Skin End -->
-            </div>
-            <!-- Jssor Slider End -->            
-
-            <!-- salon components -->
-            <h2 class="salon-components-content-spacing">Salon</h2>
-			<div id="sections-container" class="sections-container">
-				<!-- salon -->
-				<div id="salon" class="salon">
-					<p id="le-parc-salon-mission" class="le-parc-salon-mission">
-						At Le Parc Salon, we believe everyone is entitled to look good and feel good. Come and get the experience of a lifetime in a warm and friendly enviorment.
-					</p>
-					<hr>
-					<p class="call-to-action-sm">Tap and Call</p>
-                    <a href="tel:+5043094376"><button class="salon-phone-button">(504) 309-4376 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></button></a>
-                    <hr>
-                    <p class="call-to-action-sm">Hours of Operation</p>
-                    <div class="container-fluid hours-of-operation">
-                        <div class="row">
-                           <div class="col-md-10">Tuesday</div>
-                           <div class="col-md-2">8:30am - 1pm</div>
-                        </div>
-                        <div class="row">
-                           <div class="col-md-10">Wednesday - Friday</div>
-                           <div class="col-md-2">8:30am - 6pm</div>
-                        </div>
-                        <div class="row">
-                           <div class="col-md-10">Saturday</div>
-                           <div class="col-md-2">8:00am - 6pm</div>
-                        </div>
-                        <div class="row">
-                           <div class="col-md-10">Sunday, Monday</div>
-                           <div class="col-md-2">closed</div>
-                        </div>
+                <div>
+                    <img u="image" src="images/slide-show/owner-chair.jpg" />
+                    <div class="jssor-caption-header">Image Description
                     </div>
-                    <div class="address-container unselectable">
-                        <a href=""><p>903 North Carrollton Avenue, New Orleans, LA</p></a>
+                    <div class="jssor-caption">
+                        Build your slider with anything, includes image, content, text, html, photo, picture
                     </div>
-                    <div id="salon-map" class="map"></div>
-				</div>
-				<!-- end salon -->
-
-				<!-- services -->
-				<h2>Services</h2>
-				<div id="services" class="services">
-					<div class="hair-services">
-					    <h6>Hair Services</h6>
-					    <table>
-					        <tr>
-					            <td>Shampoo and Set</td><td>$35</td>
-					        </tr>
-					        <tr>
-					            <td>Blowedry and Style</td><td>$35</td>
-					        </tr>
-					        <tr>
-					            <td>Flat Iron</td><td>$10</td>
-					        </tr>
-					        <tr>
-					            <td>Deep Condition</td><td>$13</td>
-					        </tr>
-					        <tr>
-					            <td>Dandriff Treatment</td><td>$12</td>
-					        </tr>
-					        <tr>
-					            <td>Up-Do</td><td>$50</td>
-					        </tr>
-					        <tr>
-					            <td>Bridal Style</td><td>$65 - $75</td>
-					        </tr>
-					        <tr>
-					            <td>Keratin Express Treatment</td><td>$125 - $150</td>
-					        </tr>
-					        <tr>
-					            <td>Keratherapy Treatment</td><td>$250</td>
-					        </tr>
-					    </table>
-					</div>
-					<hr>
-                    <div class="hair-cuts">
-					    <h6>Hair Cuts</h6>
-					    <table>
-					        <tr>
-					            <td>Women</td><td>$48</td>
-					        </tr>
-					        <tr>
-					            <td>Men</td><td>$25</td>
-					        </tr>
-					        <tr>
-					            <td>Young Adults</td><td>$25</td>
-					        </tr>
-					        <tr>
-					            <td>Kids(Under 10)</td><td>$20</td>
-					        </tr>
-					        <tr>
-					            <td>Ends Trim</td><td>$15</td>
-					        </tr>
-					        <tr>
-					            <td>Bang Trim</td><td>$12</td>
-					        </tr>
-					        <tr>
-					            <td>Mustache Trim</td><td>$8</td>
-					        </tr>
-					        <tr>
-					            <td>Beard Trim</td><td>$10</td>
-					        </tr>
-					        <tr>
-					            <td>Nape Trim</td><td>$10</td>
-					        </tr>
-					    </table>
-					</div>
-					<hr>
-                    <div class="color-services">
-					    <h6>Color Services</h6>
-					    <table>
-					        <tr>
-					            <td>Permanent Re-Tocuh</td><td>$65 - $75</td>
-					        </tr>
-					        <tr>
-					            <td>Semi-Permanent</td><td>$60</td>
-					        </tr>
-					        <tr>
-					            <td>Full Highlights</td><td>$95 - $100</td>
-					        </tr>
-					        <tr>
-					            <td>Partial Highlights</td><td>$60 - $75</td>
-					        </tr>
-					        <tr>
-					            <td>Men's Hair Color</td><td>$25</td>
-					        </tr>
-					    </table>
-					</div>
-					<hr>
-                    <div class="chemical-services">
-					    <h6>Chemical Services</h6>
-					    <table>
-					        <tr>
-					            <td>Relaxer</td><td>$75 - $95</td>
-					        </tr>
-					        <tr>
-					            <td>Virgin Relaxer</td><td>$100 - $125</td>
-					        </tr>
-					        <tr>
-					            <td>Partial Relaxer</td><td>$30</td>
-					        </tr>
-					        <tr>
-					            <td>Men's Relaxer</td><td>$30</td>
-					        </tr>
-					    </table>
-					</div>
-					<hr>
-                    <div class="permanent-wave">
-					    <h6>Permanent Wave</h6>
-					    <table>
-					        <tr>
-					            <td>Full</td><td>$80</td>
-					        </tr>
-					        <tr>
-					            <td>Partial</td><td>$65</td>
-					        </tr>
-					    </table>
-					</div>
-					<hr>
-                    <div class="waxing-services">
-					    <h6>Waxing Services</h6>
-					    <table>
-					        <tr>
-					            <td>Eyebrow</td><td>$12</td>
-					        </tr>
-					        <tr>
-					            <td>Lip</td><td>$12</td>
-					        </tr>
-					        <tr>
-					            <td>Chin</td><td>$12</td>
-					        </tr>
-					        <tr>
-					            <td>Ear</td><td>$12</td>
-					        </tr>
-					    </table>
-					</div>
-				</div>
-				<!-- end services -->
-
-				<!-- stylists -->
-				<h2>Stylists</h2>
-				<div id="stylists" class="stylists">
-					<img src="web/assets/images/staff/staffF.png" alt="tina payton" class="staff-picture">
-					<h3>Tina Payton</h3>
-					<p>
-					    Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text.
-					</p>
-					<img src="web/assets/images/staff/staffM.png" alt="jimmy stokes" class="staff-picture">
-					<h3>Jimmy Stokes</h3>
-					<p>
-						Jimmy Stokes is a licensed, versatile hairdresser who carries nearly 40 years of experience behind the chair.  He co-owned and operated Hair Stop Family Haircutters in Gentilly for 29 years.  Jimmy specializes in all aspects of modern hairdressing including precision hair cuts, color, highlights, clipper cutting, relaxers, permanent waves, and waxing for all ethnicities.
-					</p>
-				</div>
-				<!-- end stylists -->
-			</div>
-			<!-- end salon components -->
-
-			<!-- footer -->
-			<footer>
-                <p>Connect With Le Parc Salon</p>
-                <a href="https://www.facebook.com/LaParcSalon"><button>Like on Facebook</button></a>
-                <a href="https://www.linkedin.com/pub/tina-payton/37/7a9/255"><button>Endorse on LinkedIn</button></a>
-                <p class="copyright">Copyright 2015 Le Parc Salon. All rights reserved.</p>              
-            </footer>
-            <!-- end footer -->
-		    <div class="to-top-button">
-                <button id="to-top-button"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><br>Top</button>
+                </div>
+                <div>
+                    <img u="image" src="images/slide-show/staff-chair.jpg" />
+                    <div class="jssor-caption-header">Image Description
+                    </div>
+                    <div class="jssor-caption">
+                        Build your slider with anything, includes image, content, text, html, photo, picture
+                    </div>
+                </div>
+                <div>
+                    <img u="image" src="images/slide-show/dryer.jpg" />
+                    <div class="jssor-caption-header">Image Description
+                    </div>
+                    <div class="jssor-caption">
+                        Build your slider with anything, includes image, content, text, html, photo, picture
+                    </div>
+                </div>
+                <div>
+                    <img u="image" src="images/slide-show/entrance.jpg" />
+                    <div class="jssor-caption-header">Image Description
+                    </div>
+                    <div class="jssor-caption">
+                        Build your slider with anything, includes image, content, text, html, photo, picture
+                    </div>
+                </div>
             </div>
-        </div>		
+            <!-- bullet navigator container -->
+            <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
+                <!-- bullet navigator item prototype -->
+                <div u="prototype"></div>
+            </div>
+            <!--#endregion Bullet Navigator Skin End -->
+            <!-- Arrow Left -->
+            <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
+                </span>
+            <!-- Arrow Right -->
+            <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
+                </span>
+            <!--#endregion Arrow Navigator Skin End -->
+        </div>
+        <!-- Jssor Slider End -->
 
-        <!-- javascript -->
-		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script type="text/javascript" src="vendor/assets/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="vendor/assets/jssor/js/jssor.slider.min.js"></script>
-        <script type="text/javascript" src="vendor/assets/jssor/js/full-width-slider.js"></script>
-     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6OT7PLvySWR857_k4SMIbKkg91VLwb0c"></script>
-		<script type="text/javascript" src="web/assets/js/development/main.js"></script>
-		<script type="text/javascript">
-            
-            $(document).ready(function () {
-                var toTopButton = document.getElementById("to-top-button");
-                $(toTopButton).click(function () {
-                    window.scrollTo(0,0);
-                });                
-            });
-            
-            function initialize() {
-            var myLatlng = new google.maps.LatLng(29.979390, -90.095690);
-            var mapOptions = {
-              center: myLatlng,
-              zoom: 15,
-                disableDefaultUI: true,
-                zoomControl: true,
-                draggable: false,
-                scrollwheel: false,
-                tilt: 25
-            };
-            var map = new google.maps.Map(document.getElementById('salon-map'),
-                mapOptions);
-            var marker = new google.maps.Marker({
-              position: myLatlng,
-              map: map
-            });
-          }
-          google.maps.event.addDomListener(window, 'load', initialize);
-            
-            var sc = document.getElementById('salon-carousel');
-            var hammertime = Hammer(sc).on("swiperight", function (event) {
-                  console.log(event);
-                  var carousel = new Carousel($(sc));
-                  carousel.init();
-                  carousel.showPane(1);
-              });
-        </script>
-		<!-- end javascript -->
-	</body>
+        <!-- salon components -->
+        <h2 class="salon-components-content-spacing">Salon</h2>
+        <div id="sections-container" class="sections-container">
+            <!-- salon -->
+            <div id="salon" class="salon">
+                <p id="le-parc-salon-mission" class="le-parc-salon-mission">
+                    At Le Parc Salon, we believe everyone is entitled to look good and feel good. Come and get the experience of a lifetime in
+                    a warm and friendly enviorment.
+                </p>
+                <hr>
+                <p class="call-to-action-sm">Tap and Call</p>
+                <a href="tel:+5043094376">
+                    <button class="salon-phone-button">(504) 309-4376 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></button>
+                </a>
+                <hr>
+                <p class="call-to-action-sm">Hours of Operation</p>
+                <div class="container-fluid hours-of-operation">
+                    <div class="row">
+                        <div class="col-md-10">Tuesday</div>
+                        <div class="col-md-2">8:30am - 1pm</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">Wednesday - Friday</div>
+                        <div class="col-md-2">8:30am - 6pm</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">Saturday</div>
+                        <div class="col-md-2">8:00am - 6pm</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">Sunday, Monday</div>
+                        <div class="col-md-2">closed</div>
+                    </div>
+                </div>
+                <div class="address-container unselectable">
+                    <a href="">
+                        <p>903 North Carrollton Avenue, New Orleans, LA</p>
+                    </a>
+                </div>
+                <div id="salon-map" class="map"></div>
+            </div>
+            <!-- end salon -->
+
+            <!-- services -->
+            <h2>Services</h2>
+            <div id="services" class="services">
+                <div class="hair-services">
+                    <h6>Hair Services</h6>
+                    <table>
+                        <tr>
+                            <td>Shampoo and Set</td>
+                            <td>$35</td>
+                        </tr>
+                        <tr>
+                            <td>Blowedry and Style</td>
+                            <td>$35</td>
+                        </tr>
+                        <tr>
+                            <td>Flat Iron</td>
+                            <td>$10</td>
+                        </tr>
+                        <tr>
+                            <td>Deep Condition</td>
+                            <td>$13</td>
+                        </tr>
+                        <tr>
+                            <td>Dandriff Treatment</td>
+                            <td>$12</td>
+                        </tr>
+                        <tr>
+                            <td>Up-Do</td>
+                            <td>$50</td>
+                        </tr>
+                        <tr>
+                            <td>Bridal Style</td>
+                            <td>$65 - $75</td>
+                        </tr>
+                        <tr>
+                            <td>Keratin Express Treatment</td>
+                            <td>$125 - $150</td>
+                        </tr>
+                        <tr>
+                            <td>Keratherapy Treatment</td>
+                            <td>$250</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="hair-cuts">
+                    <h6>Hair Cuts</h6>
+                    <table>
+                        <tr>
+                            <td>Women</td>
+                            <td>$48</td>
+                        </tr>
+                        <tr>
+                            <td>Men</td>
+                            <td>$25</td>
+                        </tr>
+                        <tr>
+                            <td>Young Adults</td>
+                            <td>$25</td>
+                        </tr>
+                        <tr>
+                            <td>Kids(Under 10)</td>
+                            <td>$20</td>
+                        </tr>
+                        <tr>
+                            <td>Ends Trim</td>
+                            <td>$15</td>
+                        </tr>
+                        <tr>
+                            <td>Bang Trim</td>
+                            <td>$12</td>
+                        </tr>
+                        <tr>
+                            <td>Mustache Trim</td>
+                            <td>$8</td>
+                        </tr>
+                        <tr>
+                            <td>Beard Trim</td>
+                            <td>$10</td>
+                        </tr>
+                        <tr>
+                            <td>Nape Trim</td>
+                            <td>$10</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="color-services">
+                    <h6>Color Services</h6>
+                    <table>
+                        <tr>
+                            <td>Permanent Re-Tocuh</td>
+                            <td>$65 - $75</td>
+                        </tr>
+                        <tr>
+                            <td>Semi-Permanent</td>
+                            <td>$60</td>
+                        </tr>
+                        <tr>
+                            <td>Full Highlights</td>
+                            <td>$95 - $100</td>
+                        </tr>
+                        <tr>
+                            <td>Partial Highlights</td>
+                            <td>$60 - $75</td>
+                        </tr>
+                        <tr>
+                            <td>Men's Hair Color</td>
+                            <td>$25</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="chemical-services">
+                    <h6>Chemical Services</h6>
+                    <table>
+                        <tr>
+                            <td>Relaxer</td>
+                            <td>$75 - $95</td>
+                        </tr>
+                        <tr>
+                            <td>Virgin Relaxer</td>
+                            <td>$100 - $125</td>
+                        </tr>
+                        <tr>
+                            <td>Partial Relaxer</td>
+                            <td>$30</td>
+                        </tr>
+                        <tr>
+                            <td>Men's Relaxer</td>
+                            <td>$30</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="permanent-wave">
+                    <h6>Permanent Wave</h6>
+                    <table>
+                        <tr>
+                            <td>Full</td>
+                            <td>$80</td>
+                        </tr>
+                        <tr>
+                            <td>Partial</td>
+                            <td>$65</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="waxing-services">
+                    <h6>Waxing Services</h6>
+                    <table>
+                        <tr>
+                            <td>Eyebrow</td>
+                            <td>$12</td>
+                        </tr>
+                        <tr>
+                            <td>Lip</td>
+                            <td>$12</td>
+                        </tr>
+                        <tr>
+                            <td>Chin</td>
+                            <td>$12</td>
+                        </tr>
+                        <tr>
+                            <td>Ear</td>
+                            <td>$12</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- end services -->
+
+            <!-- stylists -->
+            <h2>Stylists</h2>
+            <div id="stylists" class="stylists">
+                <img src="images/staff/staffF.png" alt="tina payton" class="staff-picture">
+                <h3>Tina Payton</h3>
+                <p>
+                    Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder
+                    text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder
+                    text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder
+                    text Placeholder text Placeholder text Placeholder text Placeholder text Placeholder text.
+                </p>
+                <img src="images/staff/staffM.png" alt="jimmy stokes" class="staff-picture">
+                <h3>Jimmy Stokes</h3>
+                <p>
+                    Jimmy Stokes is a licensed, versatile hairdresser who carries nearly 40 years of experience behind the chair. He co-owned
+                    and operated Hair Stop Family Haircutters in Gentilly for 29 years. Jimmy specializes in all aspects
+                    of modern hairdressing including precision hair cuts, color, highlights, clipper cutting, relaxers, permanent
+                    waves, and waxing for all ethnicities.
+                </p>
+            </div>
+            <!-- end stylists -->
+        </div>
+        <!-- end salon components -->
+
+        <!-- footer -->
+        <footer>
+            <p>Connect With Le Parc Salon</p>
+            <a href="https://www.facebook.com/LaParcSalon">
+                <button>Like on Facebook</button>
+            </a>
+            <a href="https://www.linkedin.com/pub/tina-payton/37/7a9/255">
+                <button>Endorse on LinkedIn</button>
+            </a>
+            <p class="copyright">Copyright 2015 Le Parc Salon. All rights reserved.</p>
+        </footer>
+        <!-- end footer -->
+        <div class="to-top-button">
+            <button id="to-top-button"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                <br>Top</button>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="dependencies/jssor/js/jssor.slider.min.js"></script>
+    <script type="text/javascript" src="dependencies/jssor/js/full-width-slider.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6OT7PLvySWR857_k4SMIbKkg91VLwb0c"></script>
+    <script type="text/javascript" src="src/development/js/main.js"></script>
+    <!-- end javascript -->
+</body>
+
 </html>
