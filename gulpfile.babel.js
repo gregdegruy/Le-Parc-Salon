@@ -25,15 +25,29 @@ gulp.task('sass:watch', () => {
 /**
  * JS compile tasks 
  */
+//gulp.task('babel', () => {
+//  return gulp.src([
+//        './dependencies/jssor/js/jssor.slider.min.js',
+//        './dependencies/jssor/js/full-width-slider.js',
+//        './dependencies/headroom/headroom.js',
+//        './src/development/js/modules/**/*.js'  
+//    ])
+//    .pipe(sourcemaps.init())    
+//    .pipe(concat('main.js'))
+//    .pipe(babel({
+//        presets: ['es2015']  
+//    }))    
+//    .pipe(sourcemaps.write('.'))
+//    .pipe(gulp.dest('./src/development/js'));
+//});
+
 gulp.task('babel', () => {
   return gulp.src([
-        './dependencies/jssor/js/jssor.slider.min.js',
-        './dependencies/jssor/js/full-width-slider.js',
-        './dependencies/headroom/headroom.js',
+        './dependencies/headroom/headroom.min.js',
         './src/development/js/modules/**/*.js'  
     ])
     .pipe(sourcemaps.init())    
-    .pipe(concat('main.js'))
+    .pipe(concat('Main.js'))
     .pipe(babel({
         presets: ['es2015']  
     }))    
