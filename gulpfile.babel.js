@@ -7,6 +7,14 @@ const concat = require('gulp-concat');
 const sass = require('gulp-sass');
 const sourcemaps = require("gulp-sourcemaps");
 const uglify = require('gulp-uglify');
+const webserver = require('gulp-webserver');
+
+/**
+ * Default task
+ */
+gulp.task('default', () => {
+  console.log('✩ Greg Universe ✩');
+});
 
 /**
  * CSS compile tasks 
@@ -25,22 +33,6 @@ gulp.task('sass:watch', () => {
 /**
  * JS compile tasks 
  */
-//gulp.task('babel', () => {
-//  return gulp.src([
-//        './dependencies/jssor/js/jssor.slider.min.js',
-//        './dependencies/jssor/js/full-width-slider.js',
-//        './dependencies/headroom/headroom.js',
-//        './src/development/js/modules/**/*.js'  
-//    ])
-//    .pipe(sourcemaps.init())    
-//    .pipe(concat('main.js'))
-//    .pipe(babel({
-//        presets: ['es2015']  
-//    }))    
-//    .pipe(sourcemaps.write('.'))
-//    .pipe(gulp.dest('./src/development/js'));
-//});
-
 gulp.task('babel', () => {
   return gulp.src([
         './dependencies/headroom/headroom.min.js',
@@ -56,8 +48,11 @@ gulp.task('babel', () => {
 });
 
 /**
- * Default task
+ * Tasks from Angular2 Yoeman Scaffolding
  */
-gulp.task('default', () => {
-  console.log('✩ Greg Universe ✩');
+gulp.task('server', () => {
+  gulp.src('./')
+    .pipe(webserver({
+      open: true
+    }));
 });
