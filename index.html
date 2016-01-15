@@ -18,12 +18,28 @@
     <!--[if IE]>
 	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	    <![endif]-->
+	    
+    <script src="node_modules/es6-shim/es6-shim.js"></script>
+    <!-- 1. Load libraries -->
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    
+<!--    <script src="https://code.angularjs.org/tools/typescript.js"></script>-->
+<!--
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.min.js"></script>
+-->
+    
+    <script type="text/javascript" src="src/development/app/shared/navbar/boot.js"></script>
 </head>
 
 <body>
     <div id="main-container">
-        <!-- nav -->
-        <le-parc-nav>Loading...</le-parc-nav>
+        <!-- nav -->        
         <nav class="headroom">
             <p class="leparc-l">
                 <span class="glyphicon glyphicon-tree-deciduous"></span>L
@@ -38,16 +54,18 @@
             </ul>
         </nav>
         <!-- end nav -->
-
+        
         <!-- header -->
         <header>
             <h1>Le Parc Salon</h1>
             <img src="images/affinity-files/logo.svg" alt="le parc salon logo" height="200px">
         </header>
         <!-- end header -->
+        
+        <my-app>Loading...</my-app>
 
         <!-- slider cta -->
-        <div class="salon-carousel-cta">
+        <div class="salon-carousel-cta" src="node_modules/angular2/platform/browser.js">
             <p>Scroll down for more</p>
             <span class="glyphicon glyphicon-menu-down"></span>
         </div>
@@ -390,15 +408,10 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="dependencies/jssor/js/jssor.slider.min.js"></script>
     <script type="text/javascript" src="dependencies/jssor/js/full-width-slider.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6OT7PLvySWR857_k4SMIbKkg91VLwb0c"></script>
-    
-    <script src="node_modules/es6-shim/es6-shim.js"></script>
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/rxjs/bundles/Rx.js"></script>
-    <script type="text/javascript" src="node_modules/angular2/bundles/angular2.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6OT7PLvySWR857_k4SMIbKkg91VLwb0c"></script>    
     
     <script type="text/javascript" src="src/development/js/main.js"></script>
+        
     <!-- end javascript -->
 </body>
 
