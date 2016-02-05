@@ -17,8 +17,7 @@
     <!-- allow older IE to run HTML5 -->
     <!--[if IE]>
 	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	    <![endif]-->
-	    
+	    <![endif]-->	    
     <script src="node_modules/es6-shim/es6-shim.js"></script>
     <!-- 1. Load libraries -->
     <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
@@ -27,42 +26,39 @@
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
     
 <!--    <script src="https://code.angularjs.org/tools/typescript.js"></script>-->
-<!--
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/rxjs/bundles/Rx.js"></script>
-    <script src="node_modules/angular2/bundles/angular2.min.js"></script>
--->
     
-    <script type="text/javascript" src="src/development/app/shared/navbar/boot.js"></script>
+<!--    <script type="text/javascript" src="src/development/app/shared/navbar/boot.js"></script>-->
+    
+    <script>
+System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        },
+        map: {
+            navbar: 'src/development/app/shared/navbar'
+        }
+      });      System.import('src/development/app/shared/navbar/controls/boot.js')
+            .then(null, console.error.bind(console));
+    </script>
+    
 </head>
 
 <body>
     <div id="main-container">
-        <!-- nav -->        
-        <nav class="headroom">
-            <p class="leparc-l">
-                <span class="glyphicon glyphicon-tree-deciduous"></span>L
-            </p>
-            <ul>
-                <a href="#services">
-                    <li>Services</li>
-                </a>
-                <a href="#stylists">
-                    <li>Stylists</li>
-                </a>
-            </ul>
-        </nav>
+               
+        <!-- nav -->
+        <leparc-nav>Loading...</leparc-nav>
         <!-- end nav -->
-        
+                       
         <!-- header -->
         <header>
             <h1>Le Parc Salon</h1>
             <img src="images/affinity-files/logo.svg" alt="le parc salon logo" height="200px">
         </header>
-        <!-- end header -->
-        
-        <my-app>Loading...</my-app>
+        <!-- end header -->               
 
         <!-- slider cta -->
         <div class="salon-carousel-cta" src="node_modules/angular2/platform/browser.js">
