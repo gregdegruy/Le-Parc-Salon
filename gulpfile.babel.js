@@ -52,7 +52,7 @@ gulp.task('babel', () => {
 });
 
 /**
- * Tasks from Angular2 Yoeman Scaffolding
+ * Server Tasks
  */
 gulp.task('server', () => {
   gulp.src('./')
