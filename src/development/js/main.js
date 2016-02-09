@@ -110,4 +110,4 @@ google.maps.event.addDomListener(window, 'load', initialize);
 var navbar = document.querySelector("nav");
 var headroom = new Headroom(navbar);
 headroom.init();
-//# sourceMappingURL=Main.js.map
+//# sourceMappingURL=main.js.map

@@ -43,7 +43,7 @@ gulp.task('babel', () => {
         `${dirs.src}/js/modules/**/*.js`  
     ])
     .pipe(sourcemaps.init())    
-    .pipe(concat('Main.js'))
+    .pipe(concat('main.js'))
     .pipe(babel({
         presets: ['es2015']  
     }))    
