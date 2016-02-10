@@ -9,26 +9,26 @@ System.register(["angular2/core"], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var NavbarComponent;
+    var StylistsComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            NavbarComponent = (function () {
-                function NavbarComponent() {
+            StylistsComponent = (function () {
+                function StylistsComponent() {
                 }
-                NavbarComponent = __decorate([
+                StylistsComponent = __decorate([
                     core_1.Component({
-                        selector: "leparc-navbar",
-                        templateUrl: "./src/development/app/shared/navbar/navbar-view.html"
+                        selector: "stylists",
+                        templateUrl: "./src/development/app/components/home/stylists/stylists-view.html"
                     }), 
                     __metadata('design:paramtypes', [])
-                ], NavbarComponent);
-                return NavbarComponent;
+                ], StylistsComponent);
+                return StylistsComponent;
             })();
-            exports_1("NavbarComponent", NavbarComponent);
+            exports_1("StylistsComponent", StylistsComponent);
         }
     }
 });

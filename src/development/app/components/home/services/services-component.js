@@ -9,26 +9,26 @@ System.register(["angular2/core"], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var NavbarComponent;
+    var ServicesComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            NavbarComponent = (function () {
-                function NavbarComponent() {
+            ServicesComponent = (function () {
+                function ServicesComponent() {
                 }
-                NavbarComponent = __decorate([
+                ServicesComponent = __decorate([
                     core_1.Component({
-                        selector: "leparc-navbar",
-                        templateUrl: "./src/development/app/shared/navbar/navbar-view.html"
+                        selector: "services",
+                        templateUrl: "./src/development/app/components/home/services/services-view.html"
                     }), 
                     __metadata('design:paramtypes', [])
-                ], NavbarComponent);
-                return NavbarComponent;
+                ], ServicesComponent);
+                return ServicesComponent;
             })();
-            exports_1("NavbarComponent", NavbarComponent);
+            exports_1("ServicesComponent", ServicesComponent);
         }
     }
 });
