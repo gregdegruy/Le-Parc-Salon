@@ -9,26 +9,26 @@ System.register(["angular2/core"], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var AppComponent;
+    var NavbarComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            NavbarComponent = (function () {
+                function NavbarComponent() {
                 }
-                AppComponent = __decorate([
+                NavbarComponent = __decorate([
                     core_1.Component({
                         selector: "leparc-navbar",
-                        templateUrl: "./src/development/app/shared/navbar/views/navbar.html"
+                        templateUrl: "./src/development/app/shared/navbar/navbar-view.html"
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], NavbarComponent);
+                return NavbarComponent;
             })();
-            exports_1("AppComponent", AppComponent);
+            exports_1("NavbarComponent", NavbarComponent);
         }
     }
 });
