@@ -1,4 +1,4 @@
-System.register(['angular2/platform/browser', "angular2/core", "./shared/navbar/navbar-component", "./components/home/salon/salon-component", "./components/home/services/services-component", "./components/home/stylists/stylists-component"], function(exports_1) {
+System.register(['angular2/platform/browser', "angular2/core", "./shared/floating-action-button/floating-action-button-component", "./shared/footer/footer-component", "./shared/navbar/navbar-component", "./components/home/salon/salon-component", "./components/home/services/services-component", "./components/home/stylists/stylists-component"], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,7 +8,7 @@ System.register(['angular2/platform/browser', "angular2/core", "./shared/navbar/
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var browser_1, core_1, navbar_component_1, salon_component_1, services_component_1, stylists_component_1;
+    var browser_1, core_1, floating_action_button_component_1, footer_component_1, navbar_component_1, salon_component_1, services_component_1, stylists_component_1;
     var MainComponent;
     return {
         setters:[
@@ -17,6 +17,12 @@ System.register(['angular2/platform/browser', "angular2/core", "./shared/navbar/
             },
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (floating_action_button_component_1_1) {
+                floating_action_button_component_1 = floating_action_button_component_1_1;
+            },
+            function (footer_component_1_1) {
+                footer_component_1 = footer_component_1_1;
             },
             function (navbar_component_1_1) {
                 navbar_component_1 = navbar_component_1_1;
@@ -42,6 +48,8 @@ System.register(['angular2/platform/browser', "angular2/core", "./shared/navbar/
                 MainComponent = __decorate([
                     core_1.Component({
                         directives: [
+                            footer_component_1.FooterComponent,
+                            floating_action_button_component_1.FloatingActionButtonComponent,
                             navbar_component_1.NavbarComponent,
                             salon_component_1.SalonComponent,
                             services_component_1.ServicesComponent,
