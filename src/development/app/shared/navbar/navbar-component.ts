@@ -1,7 +1,10 @@
-import {Component} from "angular2/core";
+import {Component, View} from "angular2/core";
 
 @Component({
-    selector: "leparc-navbar",
+    selector: "leparc-navbar"
+})
+
+@View({
     templateUrl: "./src/development/app/shared/navbar/navbar-view.html"
 })
 
