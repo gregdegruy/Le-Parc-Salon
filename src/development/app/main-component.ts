@@ -1,6 +1,7 @@
 import {bootstrap} from "angular2/platform/browser";
 import {Component} from "angular2/core";
 
+import {CarouselComponent} from "./components/home/carousel/carousel-component";
 import {FloatingActionButtonComponent} from "./shared/floating-action-button/floating-action-button-component";
 import {FooterComponent} from "./shared/footer/footer-component";
 import {NavbarComponent} from "./shared/navbar/navbar-component";
@@ -15,6 +16,7 @@ import {StylistsComponent} from "./components/home/stylists/stylists-component";
  */
 @Component({
     directives: [
+        CarouselComponent,
         FooterComponent,
         FloatingActionButtonComponent,
         NavbarComponent, 
