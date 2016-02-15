@@ -7,8 +7,7 @@ import {Component} from "angular2/core";
 
 export class FloatingActionButtonComponent {
 
-    constructor() {
-        
+    constructor() {        
         setTimeout(() => {
             if (document.getElementById("to-top-button") !== null) {
                 document.getElementById("to-top-button").addEventListener("click", () => {

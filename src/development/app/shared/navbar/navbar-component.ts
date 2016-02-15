@@ -7,11 +7,13 @@ import {Component} from "angular2/core";
 
 export class NavbarComponent {
 
-    constructor() {               
-        System.import("dependencies/headroom/headroom.js").then(() => {
-            var navbar = document.getElementById("leparc-nav");
-            var headroom = new Headroom(navbar);
-            headroom.init();
-        });
+    constructor() {        
+        setTimeout(() => {
+            System.import("dependencies/headroom/headroom.js").then(() => {
+                var navbar = document.getElementById("leparc-nav");
+                var headroom = new Headroom(navbar);
+                headroom.init();
+            });
+        }, 1);
     }
 }
