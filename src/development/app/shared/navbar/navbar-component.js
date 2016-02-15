@@ -18,6 +18,11 @@ System.register(["angular2/core"], function(exports_1) {
         execute: function() {
             NavbarComponent = (function () {
                 function NavbarComponent() {
+                    System.import("dependencies/headroom/headroom.js").then(function () {
+                        var navbar = document.getElementById("leparc-nav");
+                        var headroom = new Headroom(navbar);
+                        headroom.init();
+                    });
                 }
                 NavbarComponent = __decorate([
                     core_1.Component({

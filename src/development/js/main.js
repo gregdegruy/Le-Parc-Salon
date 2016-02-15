@@ -103,11 +103,3 @@ function initialize() {
     });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
-/**
- * Navbar
- */
-
-var navbar = document.querySelector("nav");
-var headroom = new Headroom(navbar);
-headroom.init();
-//# sourceMappingURL=main.js.map

@@ -21,9 +21,9 @@ gulp.task('default', () => {
 });
 
 /**
- * CSS compile tasks 
+ * CSS compile tasks
  */
-gulp.task('sass', () => {                  
+gulp.task('sass', () => {
     return gulp.src(`${dirs.src}/css/sass/main.scss`)
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(`${dirs.src}/css/`))
@@ -35,18 +35,18 @@ gulp.task('sass:watch', () => {
 });
 
 /**
- * JS compile tasks 
+ * JS compile tasks
  */
 gulp.task('babel', () => {
   return gulp.src([
         './dependencies/headroom/headroom.min.js',
-        `${dirs.src}/js/modules/**/*.js`  
+        `${dirs.src}/js/modules/**/*.js`
     ])
-    .pipe(sourcemaps.init())    
+    .pipe(sourcemaps.init())
     .pipe(concat('main.js'))
     .pipe(babel({
-        presets: ['es2015']  
-    }))    
+        presets: ['es2015']
+    }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(`${dirs.src}/js`));
 });
