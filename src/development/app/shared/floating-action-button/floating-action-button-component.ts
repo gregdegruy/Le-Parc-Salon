@@ -9,13 +9,13 @@ export class FloatingActionButtonComponent {
 
     constructor() {
         
-        System.import("dependencies/headroom/headroom.js").then(() => {
+        setTimeout(() => {
             if (document.getElementById("to-top-button") !== null) {
                 document.getElementById("to-top-button").addEventListener("click", () => {
                     window.scrollTo(0, 0);
                     console.log("click");
                 });
             }
-        });
+        }, 1);
     }
 }

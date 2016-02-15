@@ -18,14 +18,14 @@ System.register(["angular2/core"], function(exports_1) {
         execute: function() {
             FloatingActionButtonComponent = (function () {
                 function FloatingActionButtonComponent() {
-                    System.import("dependencies/headroom/headroom.js").then(function () {
+                    setTimeout(function () {
                         if (document.getElementById("to-top-button") !== null) {
                             document.getElementById("to-top-button").addEventListener("click", function () {
                                 window.scrollTo(0, 0);
                                 console.log("click");
                             });
                         }
-                    });
+                    }, 1);
                 }
                 FloatingActionButtonComponent = __decorate([
                     core_1.Component({

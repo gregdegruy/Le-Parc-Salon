@@ -78,12 +78,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                 c = this.toleranceExceeded(a, b);this.isOutOfBounds(a) || (a <= this.offset ? this.top() : this.notTop(), this.shouldUnpin(a, c) ? this.unpin() : this.shouldPin(a, c) && this.pin(), this.lastKnownScrollY = a);
         } }, g.options = { tolerance: { up: 0, down: 0 }, offset: 0, scroller: a, classes: { pinned: "headroom--pinned", unpinned: "headroom--unpinned", top: "headroom--top", notTop: "headroom--not-top", initial: "headroom" } }, g.cutsTheMustard = "undefined" != typeof h && h.rAF && h.bind && h.classList, a.Headroom = g;
 }(window, document);
-// $(document).ready(function () {
-//     var toTopButton = document.getElementById("to-top-button");
-//     $(toTopButton).click(function () {
-//         window.scrollTo(0, 0);
-//     });
-// });
 
 function initialize() {
     var myLatlng = new google.maps.LatLng(29.979390, -90.095690);
