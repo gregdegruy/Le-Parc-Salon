@@ -5,4 +5,17 @@ import {Component} from "angular2/core";
     templateUrl: "./src/development/app/shared/floating-action-button/floating-action-button-view.html"
 })
 
-export class FloatingActionButtonComponent { }
+export class FloatingActionButtonComponent {
+
+    constructor() {
+        
+        System.import("dependencies/headroom/headroom.js").then(() => {
+            if (document.getElementById("to-top-button") !== null) {
+                document.getElementById("to-top-button").addEventListener("click", () => {
+                    window.scrollTo(0, 0);
+                    console.log("click");
+                });
+            }
+        });
+    }
+}
