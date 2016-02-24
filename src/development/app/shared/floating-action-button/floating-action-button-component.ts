@@ -1,3 +1,6 @@
+// tell TS we are working with a 3rd party API
+declare var System: any;
+
 import {Component} from "angular2/core";
 
 @Component({
@@ -12,7 +15,7 @@ export class FloatingActionButtonComponent {
             if (document.getElementById("to-top-button") !== null) {
                 document.getElementById("to-top-button").addEventListener("click", () => {
                     window.scrollTo(0, 0);
-                    console.log("click");
+                    console.log("Floating action button click");
                 });
             }
         }, 1);

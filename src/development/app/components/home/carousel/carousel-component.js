@@ -18,8 +18,6 @@ System.register(["angular2/core"], function(exports_1) {
         execute: function() {
             CarouselComponent = (function () {
                 function CarouselComponent() {
-                    setTimeout(function () {
-                    }, 1);
                 }
                 CarouselComponent = __decorate([
                     core_1.Component({

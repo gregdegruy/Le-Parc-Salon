@@ -22,7 +22,7 @@ System.register(["angular2/core"], function(exports_1) {
                         if (document.getElementById("to-top-button") !== null) {
                             document.getElementById("to-top-button").addEventListener("click", function () {
                                 window.scrollTo(0, 0);
-                                console.log("click");
+                                console.log("Floating action button click");
                             });
                         }
                     }, 1);

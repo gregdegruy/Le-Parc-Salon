@@ -1,3 +1,7 @@
+// tell TS we are working with 3rd party APIs
+declare var System: any;
+declare var Headroom: any;
+
 import {Component} from "angular2/core";
 
 @Component({
